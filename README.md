@@ -40,3 +40,20 @@ Value for the owner is providing light-harted entertainment.
 Value for the visitor is engaging in a simple game with an educational element.
 
 # Plane 2 Scope
+## Objective requirements
+The visitor wants a site which will provide entertainment and is easy to use.
+
+## Functional specifications
+- Site shows random words.
+- Visitor enters words that are similar in meaning (or otherwise related to the shown word) using keyboard. 
+- After pressing the Submit button or Enter key on keyboard by visitor the word is checked on it's appearance in the thesaurus. 
+- Score of successful and unsuccessful tries is kept and shown on the page for the duration of the game.
+
+## Content requirements
+Website needs to contain:
+- Explanation on nature of the game.
+- Game part.
+- Score.
+
+## Project rollout
+All opportunities listed in the Focus section are expected to be realized in the initial rollout.
