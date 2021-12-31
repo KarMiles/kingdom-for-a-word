@@ -17,4 +17,26 @@ The site was designed using the Five Planes of User Experience approach. This do
 - Be challenged on knowledge of the English language.
 
 ### Focus
+I calculated the Focus ratio by multiplying Importance and Viability and normalised the results. This enabled me to compare every Opportunity on a scale of 0-100%. The higher the number the more crucial it is for the Opportunity to be addressed. Importance and Feasibility spectrum is perfectly illustrated on Code Institute graph below; Opportunities with high factor of both importance and viability would find themselves on the top right corner of the graph (red area). 
+<details>
+    <summary>Importance / Viability graph</summary>
+    <img src="docs/feasibility-graph.gif">
+</details>
 
+
+| No. | Opportunity / problem                                        | Importance (1 - 5 most important) | Viability / Feasibility (1– 5 most difficult) | Focus ratio |
+| --- | ------------------------------------------------------------ | --------------------------------- | --------------------------------------------- | ----------- |
+| 1   | Provide entertainment for the visitor                        | 5                                 | 5                                             | 100%        |
+| 2   | Provide a challenge in the knowledge of the English language | 4                                 | 5                                             | 80%         |
+| 3   | Provide educational element in the English language          | 3                                 | 4                                             | 48%         |
+
+Basing on the above analysis the initial roll-out follows on opportunities 1 through 3 as important and feasible and as such are addressed in the project. 
+
+**Definition**
+The website is a recreational site providing entertainment with educational elements within English language scope.
+
+**Value**
+Value for the owner is providing light-harted entertainment. 
+Value for the visitor is engaging in a simple game with an educational element.
+
+# Plane 2 Scope
