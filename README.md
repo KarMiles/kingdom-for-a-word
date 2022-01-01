@@ -72,3 +72,17 @@ Webpage has three main semantic sections:
     * Introduction and difficulty choice
     * Game part with random word, text area for Visitor's word, Submit button and score.
 3. Footer: containing links to Owner's social media platforms and information about the site.
+
+# Plane 4 Skeleton
+
+Site low-fidelity prototypes (wireframes) were created in three versions for various screen sizes: small/smartphone, medium/tablet and large/PC to maintain website responsiveness on various screen sizes:
+
+<details>
+    <summary>Starting page</summary>
+    <img src="docs/wireframe-starting-page.png">
+</details>
+<details>
+    <summary>Game page</summary>
+    <img src="docs/wireframe-game-page.png">
+</details>
+
