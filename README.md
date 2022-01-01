@@ -57,3 +57,18 @@ Website needs to contain:
 
 ## Project rollout
 All opportunities listed in the Focus section are expected to be realized in the initial rollout.
+
+# Plane 3 Structure
+## Prioritisation
+The elements of the project are prioritised in the following order:
+1. Provide entertainment for the visitor
+2. Provide a challenge in the knowledge of the English language
+3. Provide educational element in the English language
+
+## Semantic sections
+Webpage has three main semantic sections: 
+1. Header: contains the title of the game and doesn't change.
+2. Main section: contains two subpages:
+    * Introduction and difficulty choice
+    * Game part with random word, text area for Visitor's word, Submit button and score.
+3. Footer: containing links to Owner's social media platforms and information about the site.
