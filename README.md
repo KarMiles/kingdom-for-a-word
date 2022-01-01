@@ -155,3 +155,29 @@ Steps for cloning repository:
 5. In Git Bash change working directory to the desired destination for the clone,
 6. Type "git clone", paste URL for SSH method from the clipboard (in this project: git clone git&#8203;@github.com:KarMiles/kingdom-for-a-word.git) and press Enter.
 
+# Credits
+## Code
+n/a 
+## Media
+
+[Colormind](http://colormind.io) – color palette creation  
+<details>
+    <summary>colour palette creation</summary>
+    <img src="docs\color-pallette.jpg">
+</details>
+
+[Font Awesome](https://fontawesome.com/) - sourcing icons
+
+[Favicon Generator](https://favicon.io/favicon-generator/) - favicon creation
+
+[Pikwizard](https://pikwizard.com/) - stock photographs
+
+[Unsplash](https://unsplash.com) - stock photographs
+
+[Code Institute](https://learn.codeinstitute.net/) - educational material
+<details>
+    <summary> feasibility-graph </summary>
+    <img src="docs\feasibility-graph.gif">
+</details>
+
+Other media are property of the developer.
