@@ -12,9 +12,18 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
+    font-family: 'MedievalSharp', cursive;
 }
 
-/* footer */
+/* HEADER */
+
+header {
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
 
 footer {
     text-align: center;
@@ -65,10 +74,34 @@ footer a :hover {
 
 .footer-description p {
     margin: 0;
-    padding: 7px 3px;
+    padding: 7px 3px 0;
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
+}
+
+/* MAIN */
+
+/* links */
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none; 
+}
+
+a {
+    color: inherit;
+    font-weight: 600;
+}
+
+#main p {
+    color: white;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    margin: 0;
+}
+
+#instruction {
+    margin-top: 1rem;
 }

@@ -154,3 +154,4 @@ Steps for cloning repository:
 4. Open Git Bash (Git Bash can be downloaded from https://git-scm.com/downloads),
 5. In Git Bash change working directory to the desired destination for the clone,
 6. Type "git clone", paste URL for SSH method from the clipboard (in this project: git clone git&#8203;@github.com:KarMiles/kingdom-for-a-word.git) and press Enter.
+
