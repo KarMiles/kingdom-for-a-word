@@ -105,3 +105,20 @@ Fonts used on the website are
 ## Structure
 The website is structured in a simple, user friendly manner. Starting page briefly explains rules of the game and lets the visitor chose level of the game. After chosing difficulty the game page shows. This is where the score is also shown. The player can always go back by clicking the title of the game.
 
+# Technologies used
+This project has been realised using the following technologies:
+* HTML5
+* CSS3
+* JavaScript
+
+# Frameworks Libraries and Programs used
+## Tools used
+This project has been realised using the following frameworks, programs and webpages:
+* Git - for version control
+* [GitHub](https://github.com/) - for storing the project's code and other files
+* [Visual Studio Code](https://code.visualstudio.com/) - for writing the code and documents
+* [Balsamiq](https://balsamiq.com/) - for wireframes creation
+* [Google Fonts](https://fonts.google.com/)
+* [Table to Markdown](https://tabletomarkdown.com) - for converting tables to markdown format.
+* [W3 School](https://www.w3schools.com/) - for web development coding solutions
+* [IrfanView](https://www.irfanview.com/) - for graphics editing
