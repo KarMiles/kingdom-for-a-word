@@ -4,3 +4,12 @@
 font-family: 'MedievalSharp', cursive;
 font-family: 'UnifrakturCook', cursive;
 */
+
+body {
+    background-image: url("../images/pages.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #d4ceca;
+}
