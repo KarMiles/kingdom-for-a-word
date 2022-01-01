@@ -86,3 +86,22 @@ Site low-fidelity prototypes (wireframes) were created in three versions for var
     <img src="docs/wireframe-game-page.png">
 </details>
 
+# Plane 5 Surface
+
+## Design choices
+The intention behind building the sensory design for the site is focusing on a light-harted approach to playing with words. Graphic design draws on historic letters and vintage paper. This design is in line with the name of the game "Kingdom for the Word!" losely based on the words in Shakespeare's play "Richard III". 
+
+## Colour
+Colour palette applied in the site is inspired by the looks of vintage paper and hand-written and gothic letters.
+<details>
+    <summary>Colour palette</summary>
+    <img src="docs/color-pallette.jpg">
+</details>
+
+## Fonts
+Fonts used on the website are 
+- UnifrakturCook
+- MedievalSharp
+## Structure
+The website is structured in a simple, user friendly manner. Starting page briefly explains rules of the game and lets the visitor chose level of the game. After chosing difficulty the game page shows. This is where the score is also shown. The player can always go back by clicking the title of the game.
+
