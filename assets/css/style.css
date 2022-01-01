@@ -26,7 +26,9 @@ header {
 /* FOOTER */
 
 footer {
+    font-family: 'UnifrakturCook', cursive;
     text-align: center;
+
     background-color: white;
     padding-top: 1%;
     margin-top: 2%;
@@ -34,14 +36,10 @@ footer {
     display: block;
     width: 100%;
     clear: both;
-
     position: fixed;
     left: 0;
     bottom: 0;
-    text-align: center;
-
-    font-family: 'UnifrakturCook', cursive;
-
+    
     opacity: 0.9;
 } 
 
@@ -94,14 +92,36 @@ a {
     font-weight: 600;
 }
 
-#main p {
+#intro p {
     color: white;
     text-align: center;
     background:rgba(0, 0, 0, 0.3);
     padding: 5px;
-    margin: 0;
+    margin: 0, 5%;
 }
 
 #instruction {
+    margin-top: 2rem;
+}
+
+#choice {
+    justify-content: center;
+    align-items: center;
+    display: grid;
     margin-top: 1rem;
+}
+
+button {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: x-large;
+    color: #050403;
+    text-decoration: none;
+    text-align: center;
+    
+    padding: 8px 32px;
+    background-color: #D4CECA;
+    margin: 8px;
+
+    display: inline-block;
+    width: 200px;
 }

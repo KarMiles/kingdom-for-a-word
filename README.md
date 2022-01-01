@@ -180,4 +180,6 @@ n/a
     <img src="docs\feasibility-graph.gif">
 </details>
 
+[Collins Dictionary](https://www.collinsdictionary.com/dictionary/english-thesaurus) - sourcing words for the game
+
 Other media are property of the developer.
