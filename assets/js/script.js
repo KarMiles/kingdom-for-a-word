@@ -38,7 +38,16 @@ document.getElementById("answer-box").addEventListener("keydown", function(event
  * Main game setup
  */
 function runGame(gameType) {
+    // hide initial screen and show game screen
     document.getElementById("start-screen").style.display = "none";
     document.getElementById("game-screen").style.display = "initial";
+
+    // clear and focus cursor on answer box 
+    document.getElementById("answer-box").value = "";
+    document.getElementById("answer-box").focus();
+
+    // get random word for the game
+    document.getElementById("word-pop").textContent = getWord();
+
 }
 

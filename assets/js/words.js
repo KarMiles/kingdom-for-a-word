@@ -28,3 +28,15 @@ let words = {
         'revitalize', 'restore', 'rally', 'renew', 'renovate', 'rekindle', 'kick-start', 'breathe', 'new', 'life', 'into', 'invigorate', 'reanimate', 'bring', 'round', 'awaken', 'animate', 'rouse', 'resuscitate', 'bring', 'back', 'to', 'life', 'bring', 'round', 'awaken', 'animate', 'rouse', 'resuscitate', 'bring', 'back', 'to', 'life', 'come', 'round', 'recover', 'quicken', 'spring', 'up', 'again', 'refresh', 'restore', 'comfort', 'cheer', 'renew', 'resurrect', 'rejuvenate', 'reinvigorate', 'revivify'
     ]
 }
+
+    /**
+     * Randomly picks a word.
+     * Creates a word array, genereates a random number and retuns the coresponding item from the word array.
+     * @returns {string} words[num]
+     */
+    function getWord() {
+        let vocabulary = Object.keys(words);
+        console.log(vocabulary);
+        let num = Math.floor(Math.random() * vocabulary.length);
+        return vocabulary[num];
+    }
