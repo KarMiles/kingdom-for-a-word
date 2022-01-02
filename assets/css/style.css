@@ -7,13 +7,14 @@ font-family: 'UnifrakturCook', cursive;
 
 body {
     background-image: url("../images/pages.jpg");
-    background-color: #d4ceca;
+    background-color: #796859;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 
     font-family: 'MedievalSharp', cursive;
+    color: white;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -36,6 +37,15 @@ header > p {
 
 /* MAIN */
 
+/* visibility */
+#start-screen {
+    display: initial; /* unset or none */
+}
+
+#game-screen {
+    display: none;
+}
+
 /* links */
 a:link, a:visited, a:hover, a:active { 
     text-decoration: none; 
@@ -55,23 +65,50 @@ a {
 }
 
 #make-choice p {
-    color: white;
     background:rgba(0, 0, 0, 0.3);
-
     text-align: center;
     padding: 5px 10px;
     display: inline-block;
 }
 
-/* buttons */
-#choice {
+.container {
     justify-content: center;
     align-items: center;
-    display: grid;
+    display: grid;  
     margin-top: 1rem;
 }
 
-button {
+.container > p {
+    background:rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+#word-pop {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+}
+
+#answer-message {
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem
+}
+
+#answer-box {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+/* buttons */
+
+.container button {
     font-family: 'UnifrakturCook', cursive;
     font-size: x-large;
     color: #050403;
@@ -83,7 +120,19 @@ button {
     margin: 8px;
 
     display: inline-block;
-    width: 200px;
+    width: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.score {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+}
+
+.spacer {
+    height: 70px;
 }
 
 /* FOOTER */
