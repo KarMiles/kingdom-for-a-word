@@ -1,6 +1,6 @@
 let words = {
     pilot: [
-        'airman', ' captain', ' flyer aviator', ' aeronaut', 'fly', ' control', ' operate', 'fly', ' control', ' operate', 'navigate', ' drive', ' manage', ' direct', ' guide', ' handle', ' conduct', ' steer', 'direct', ' lead', ' manage', ' conduct', ' steer', 'trial', ' test', ' model', ' sample', ' experimental'
+        'airman', 'captain', 'flyer', 'aviator', 'aeronaut', 'fly', 'control', 'operate', 'fly', 'control', 'operate', 'navigate', 'drive', 'manage', 'direct', 'guide', 'handle', 'conduct', 'steer', 'direct', 'lead', 'manage', 'conduct', 'steer', 'trial', 'test', 'model', 'sample', 'experimental'
     ],
     definite: [
         'specific', 'exact', 'precise', 'clear', 'particular', 'express', 'determined', 'fixed', 'black-and-white', 'explicit', 'clear-cut', 'cut-and-dried clearly', 'defined', 'clear', 'explicit', 'black-and-white', 'clear-cut', 'unequivocal', 'unambiguous', 'guaranteed', 'clear', 'explicit', 'black-and-white', 'clear-cut', 'unequivocal', 'unambiguous', 'guaranteed', 'noticeable', 'marked', 'clear', 'decided', 'striking', 'noted', 'particular', 'obvious', 'dramatic', 'considerable', 'remarkable', 'apparent', 'evident', 'distinct', 'notable', 'manifest', 'conspicuous', 'certain', 'decided', 'sure', 'settled', 'convinced', 'positive', 'confident', 'assured'
@@ -29,14 +29,5 @@ let words = {
     ]
 }
 
-    /**
-     * Randomly picks a word.
-     * Creates a word array, genereates a random number and retuns the coresponding item from the word array.
-     * @returns {string} words[num]
-     */
-    function getWord() {
-        let vocabulary = Object.keys(words);
-        console.log(vocabulary);
-        let num = Math.floor(Math.random() * vocabulary.length);
-        return vocabulary[num];
-    }
+
+

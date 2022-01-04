@@ -9,9 +9,7 @@
  */
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
-
-    //for (let i = 0; i < buttons.length; i++) -old version
-    for (let button of buttons) {
+    for (let button of buttons) { //newer version of: for (let i = 0; i < buttons.length; i++)
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
@@ -22,20 +20,18 @@ document.addEventListener("DOMContentLoaded", function(){
         })
     }
 
-document.getElementById("answer-box").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        checkAnswer();
-    }
-})
+    // allow user to submit answer by stroking the Enter key
+    document.getElementById("answer-box").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            checkAnswer();
+        }
+    })
 
-    // runGame("difficult");
 })
-
-// function runGame(gameType) {
-// }
 
 /**
  * Main game setup
+ * @returns {void}
  */
 function runGame(gameType) {
     // hide initial screen and show game screen
@@ -47,7 +43,37 @@ function runGame(gameType) {
     document.getElementById("answer-box").focus();
 
     // get random word for the game
-    document.getElementById("word-pop").textContent = getWord();
-
+    let currentRandomWord = getRandomWord();
+    document.getElementById("word-pop").innerHTML = currentRandomWord;
 }
 
+/**
+ * Get a random word from the vocabulary.
+ * Creates a word array, genereates a random number and retuns the corresponding item from the word array.
+ * @returns {string} vocabulary[num]
+ */
+ function getRandomWord() {
+    let vocabulary = Object.keys(words);
+    let num = Math.floor(Math.random() * vocabulary.length);
+    return vocabulary[num];
+}
+
+/**
+ * Receive user answer and check against thesaurus
+ * @returns {boolean} true if correct answer, false otherwise.
+ */
+function checkAnswer() {
+    let currentRandomWord = document.getElementById("word-pop").textContent;
+    let userAnswer = document.getElementById("answer-box").value;
+
+    console.log("currentRandomWord in checkAnswer() is: " + currentRandomWord);
+    console.log("userAnswer is: " + userAnswer);
+
+    // PROBLEM: doesn't work with currentRandowWord, although works with an expample word, e.g. pilot
+    let allowedAnswers = words.currentRandomWord; // also tried `words.${currentRandomWord}`
+    console.log("array allowedAnswers is: " + allowedAnswers);
+
+    // check if user's answer is on the list of allowed answers
+    isCorrect = allowedAnswers.includes(userAnswer);
+    console.log(isCorrect);
+}
