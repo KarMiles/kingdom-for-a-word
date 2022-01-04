@@ -70,7 +70,7 @@ function checkAnswer() {
     console.log("userAnswer is: " + userAnswer);
 
     // PROBLEM: doesn't work with currentRandowWord, although works with an expample word, e.g. pilot
-    let allowedAnswers = words.currentRandomWord; // also tried `words.${currentRandomWord}`
+    let allowedAnswers = words[currentRandomWord];
     console.log("array allowedAnswers is: " + allowedAnswers);
 
     // check if user's answer is on the list of allowed answers

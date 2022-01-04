@@ -155,6 +155,11 @@ Steps for cloning repository:
 5. In Git Bash change working directory to the desired destination for the clone,
 6. Type "git clone", paste URL for SSH method from the clipboard (in this project: git clone git&#8203;@github.com:KarMiles/kingdom-for-a-word.git) and press Enter.
 
+# Testing
+
+# Bugs and changes to original desing
+During realisation of the project the following obstacles were met and changes to original design introduced:
+* Reference to a variable currentRandomWord didn't work, despite testing via console.log(currentRandomWord) showing appropriate value. Problem was in dot notation. Changing to traditional bracket [] notation solved the problem.
 # Credits
 ## Code
 n/a 
