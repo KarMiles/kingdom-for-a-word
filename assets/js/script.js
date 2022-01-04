@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
         })
     }
 
-    // allow user to submit answer by stroking the Enter key
+    // allow user to submit answer with Enter key
     document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             checkAnswer();
@@ -70,16 +70,11 @@ function checkAnswer() {
     // get user's answer
     let userAnswer = document.getElementById("answer-box").value;
 
-    console.log("currentRandomWord in checkAnswer() is: " + currentRandomWord);
-    console.log("userAnswer is: " + userAnswer);
-
     // get a list of allowed answers
     let allowedAnswers = words[currentRandomWord];
-    console.log("array allowedAnswers is: " + allowedAnswers);
 
     // check if user's answer is on the list of allowed answers
     isCorrect = allowedAnswers.includes(userAnswer);
-    console.log(isCorrect);
 
     // update scores
     if(isCorrect) {
@@ -90,6 +85,8 @@ function checkAnswer() {
         alert(`Unfortunately word "${userAnswer}" is not in the thesaurus. Try again!`)
     }
 
+    showPraise();
+
     // reset the random word and clear entry box
     runGame();
 }
@@ -99,7 +96,6 @@ function checkAnswer() {
  */
 function incrementSuccessCount() {
     let oldSuccessCount = parseInt(document.getElementById("success-count").innerText);
-        console.log("old success count: " + oldSuccessCount);
         document.getElementById("success-count").innerText = ++oldSuccessCount;
 }
 
@@ -109,4 +105,17 @@ function incrementSuccessCount() {
 function incrementFailCount() {
     let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
         document.getElementById("fail-count").innerText = ++oldFailCount;
+}
+
+/**
+ * Checks whether to show praise and if true sends it to page.
+ * @returns 
+ */
+function showPraise() {
+    let oldSuccessCount = parseInt(document.getElementById("success-count").innerText);
+    let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
+    let showPraise = oldSuccessCount > oldFailCount;
+    if(showPraise) {
+        document.getElementById("praise").innerHTML="You're doing great, keep it up!"
+    }
 }
