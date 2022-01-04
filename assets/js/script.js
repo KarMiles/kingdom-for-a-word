@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
 /**
  * Main game setup
  * @returns {void}
+ * @param gameType
  */
 function runGame(gameType) {
     // hide initial screen and show game screen
@@ -63,17 +64,49 @@ function runGame(gameType) {
  * @returns {boolean} true if correct answer, false otherwise.
  */
 function checkAnswer() {
+    // generate a random word from the list
     let currentRandomWord = document.getElementById("word-pop").textContent;
+
+    // get user's answer
     let userAnswer = document.getElementById("answer-box").value;
 
     console.log("currentRandomWord in checkAnswer() is: " + currentRandomWord);
     console.log("userAnswer is: " + userAnswer);
 
-    // PROBLEM: doesn't work with currentRandowWord, although works with an expample word, e.g. pilot
+    // get a list of allowed answers
     let allowedAnswers = words[currentRandomWord];
     console.log("array allowedAnswers is: " + allowedAnswers);
 
     // check if user's answer is on the list of allowed answers
     isCorrect = allowedAnswers.includes(userAnswer);
     console.log(isCorrect);
+
+    // update scores
+    if(isCorrect) {
+        incrementSuccessCount();
+        alert("Congratulations! Your answer is correct!");
+    } else {
+        incrementFailCount();
+        alert(`Unfortunately word "${userAnswer}" is not in the thesaurus. Try again!`)
+    }
+
+    // reset the random word and clear entry box
+    runGame();
+}
+
+/**
+ * Increment "Successfull guesses" count by 1.
+ */
+function incrementSuccessCount() {
+    let oldSuccessCount = parseInt(document.getElementById("success-count").innerText);
+        console.log("old success count: " + oldSuccessCount);
+        document.getElementById("success-count").innerText = ++oldSuccessCount;
+}
+
+/**
+ * Increment "Failed guesses" count by 1.
+ */
+function incrementFailCount() {
+    let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
+        document.getElementById("fail-count").innerText = ++oldFailCount;
 }
