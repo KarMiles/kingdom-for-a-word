@@ -23,8 +23,8 @@
     <!-- Header -->
     <header>
         <h1>
-            <a href="index.html" >
-                <img id="logo" src="assets/images/logo-knight-bw.gif" alt="logo">
+            <a href="index.html">
+                <img id="logo" src="assets/images/logo-knight-bw.png" alt="logo">
             </a>
             <a href="index.html" >
                 Kingdom for a Word!
@@ -70,8 +70,8 @@
     </div>
     <div class="spacer"></div>
 
-    <!-- Modal, shown over screen after difficulty choice is made -->
-    <div id="myModal" class="modal">
+    <!-- Modal, shown over screen after level choice is made -->
+    <div id="modalInstructions" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -81,6 +81,19 @@
             <p>If your guess is in the thesaurus you score a point.</p>
             <p>You have 10 tries in one round.</p>
             <p>Enjoy the game!</p>
+        </div>
+    </div>
+
+    
+    <!-- Modal, shown over screen after 10 games -->
+    <div id="modalFeedback" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Bravo!</h1>
+            <p>You've completed the round.</p>
+            <p>Your score is <span id="wins"></span> wins and <span id="losses"></span> losses.</p>
+            <p></p>
         </div>
     </div>
 

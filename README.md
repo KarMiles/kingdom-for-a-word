@@ -133,6 +133,7 @@ This project has been realised using the following frameworks, programs and webp
 * [W3 School](https://www.w3schools.com/) - for web development coding solutions
 * [Stack Overflow](https://stackoverflow.com/) - for web development coding solutions
 * [IrfanView](https://www.irfanview.com/) - for graphics editing
+* [Pixlr](https://pixlr.com/) - for graphics editing
 
 # Deployment
 The site is deployed to GitHub pages, using also GitHub repository, GitHub clone and GitHub branch methods as needed. On local computer Visual Studio Code program was used.

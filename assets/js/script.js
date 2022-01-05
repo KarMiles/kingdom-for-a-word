@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 let gameType = this.getAttribute("data-type");
                 // show modal with game instructions only when user clicks a button first time during session
                 if (!sessionStorage.getItem("runOnce")) {
-                    startModal();
+                    startModalInstructions();
                     sessionStorage.setItem("runOnce", true);
                 }
                 runGame(gameType);
@@ -58,7 +58,7 @@ function runGame(gameType) {
  * Creates a word array, genereates a random number and retuns the corresponding item from the word array.
  * @returns {string} vocabulary[num]
  */
- function getRandomWord() {
+function getRandomWord() {
     let vocabulary = Object.keys(words);
     let num = Math.floor(Math.random() * vocabulary.length);
     return vocabulary[num];
@@ -88,11 +88,13 @@ function checkAnswer() {
     if(isCorrect) {
         incrementSuccessCount();
         alert("Congratulations! Your answer is correct!");
+        startModalFeedback();
     } else if(noAnswer) {
         alert(`Enter your guess in the white input box!`);
     } else {
         incrementFailCount();
-        alert(`Unfortunately word "${userAnswer}" is not in the thesaurus. Try again!`)
+        alert(`Unfortunately word "${userAnswer}" is not in the thesaurus.`);
+        startModalFeedback();
     }
 
     showPraise();
@@ -118,7 +120,7 @@ function incrementFailCount() {
 }
 
 /**
- * Checks whether to show praise and if true sends it to page.
+ * Checks whether to show praise depending on number of successes and fails.
  * @returns 
  */
 function showPraise() {
