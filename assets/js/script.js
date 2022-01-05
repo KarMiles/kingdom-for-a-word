@@ -69,7 +69,7 @@ function checkAnswer() {
     let currentRandomWord = document.getElementById("word-pop").textContent;
 
     // get user's answer
-    let userAnswer = document.getElementById("answer-box").value;
+    let userAnswer = document.getElementById("answer-box").value.toLowerCase();
 
     // check if user entered answer, true if answer missing
     let noAnswer = userAnswer === ("");
