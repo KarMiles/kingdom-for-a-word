@@ -178,6 +178,7 @@ n/a
 [Pikwizard](https://pikwizard.com/) - stock photographs
 
 [Unsplash](https://unsplash.com) - stock photographs
+[Biblioteka w Szkole](https://www.bibliotekawszkole.pl/) - source image for logo
 
 [Code Institute](https://learn.codeinstitute.net/) - educational material
 <details>

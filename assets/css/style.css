@@ -57,6 +57,10 @@ a {
     font-weight: 600;
 }
 
+#logo {
+    height: 2rem;
+}
+
 /* text */
 #make-choice {
     justify-content: center;
