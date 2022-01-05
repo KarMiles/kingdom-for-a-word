@@ -9,12 +9,13 @@
  */
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
-    for (let button of buttons) { //newer version of: for (let i = 0; i < buttons.length; i++)
+    for (let button of buttons) {   //newer version of: for (let i = 0; i < buttons.length; i++)
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
             } else {
                 let gameType = this.getAttribute("data-type");
+                startModal();
                 runGame(gameType);
             }
         })
@@ -119,3 +120,4 @@ function showPraise() {
         document.getElementById("praise").innerHTML="You're doing great, keep it up!"
     }
 }
+

@@ -20,10 +20,11 @@
     <title>Kingdom for a Word!</title>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>
             <a href="index.html" >
-                <img id="logo" src="assets/images/logo-knight-bw.jpg" alt="Logo with a knight on a horse and letter W on a shield">
+                <img id="logo" src="assets/images/logo-knight-bw.gif" alt="logo">
             </a>
             <a href="index.html" >
                 Kingdom for a Word!
@@ -34,7 +35,7 @@
         </p>
     </header>
 
-    <!-- starting screen, shown on page load and after game restart -->
+    <!-- Starting screen, shown on page load and after game restart -->
     <div id="start-screen">
         <div id="make-choice">
             <p>
@@ -43,19 +44,19 @@
         </div>
         
         <div class="container"> 
-            <button id="easy" class="modal">
+            <button id="easy" class="startMed">
                 Easy
             </button>
-            <button id="medium" class="modal">
+            <button id="medium" class="startMed">
                 Medium
             </button>
-            <button id="difficult" class="modal">
+            <button id="difficult" class="startMed">
                 Difficult
             </button>
         </div>
     </div>
 
-    <!-- game screen, shown after difficulty choice is made -->
+    <!-- Game screen, shown after difficulty choice is made -->
     <div id="game-screen">
         <div class="container">
             <p id="word-pop">Word</p>
@@ -69,6 +70,19 @@
     </div>
     <div class="spacer"></div>
 
+    <!-- Modal, shown over screen after difficulty choice is made -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>How to play</h1>
+            <p>Kingdom for the Word! is a word game to let you exercise linguistic skills. </p>
+            <p>Type a word related to the one randomly shown on screen.</p>
+            <p>If your guess is in the thesaurus you score a point.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <ul>
             <li>
@@ -101,5 +115,7 @@
     <script src="assets/js/script.js"></script>
     <!-- Words for the game -->
     <script src="assets/js/words.js"></script>
+    <!-- Modal functionality -->
+    <script src="assets/js/modal.js"></script>
 </body>
 </html>
