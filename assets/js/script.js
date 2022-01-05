@@ -71,6 +71,9 @@ function checkAnswer() {
     // get user's answer
     let userAnswer = document.getElementById("answer-box").value;
 
+    // check if user entered answer, true if answer missing
+    let noAnswer = userAnswer === ("");
+
     // get a list of allowed answers
     let allowedAnswers = words[currentRandomWord];
 
@@ -81,6 +84,8 @@ function checkAnswer() {
     if(isCorrect) {
         incrementSuccessCount();
         alert("Congratulations! Your answer is correct!");
+    } else if(noAnswer) {
+        alert(`Enter your guess in the white input box!`);
     } else {
         incrementFailCount();
         alert(`Unfortunately word "${userAnswer}" is not in the thesaurus. Try again!`)
