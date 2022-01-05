@@ -129,6 +129,13 @@ a {
     width: 13rem;
     margin-left: auto;
     margin-right: auto;
+
+    border-radius: 5px;
+}
+
+.container button:hover {
+    background-color: #b2aaa5;
+    cursor: pointer;
 }
 
 .score {
@@ -226,15 +233,15 @@ footer a {
   /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    font-size: larger;
+    /* font-size: larger; */
     font-weight: bolder;
-    /* font-family: 'UnifrakturCook', cursive; */
     color: #050403;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     border-radius: 5px;
+    max-height: 100%;
 }
 
   /* The Close Button */
