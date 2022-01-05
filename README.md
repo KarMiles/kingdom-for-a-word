@@ -131,6 +131,7 @@ This project has been realised using the following frameworks, programs and webp
 * [Google Fonts](https://fonts.google.com/)
 * [Table to Markdown](https://tabletomarkdown.com) - for converting tables to markdown format.
 * [W3 School](https://www.w3schools.com/) - for web development coding solutions
+* [Stack Overflow](https://stackoverflow.com/) - for web development coding solutions
 * [IrfanView](https://www.irfanview.com/) - for graphics editing
 
 # Deployment
@@ -178,6 +179,7 @@ n/a
 [Pikwizard](https://pikwizard.com/) - stock photographs
 
 [Unsplash](https://unsplash.com) - stock photographs
+
 [Biblioteka w Szkole](https://www.bibliotekawszkole.pl/) - source image for logo
 
 [Code Institute](https://learn.codeinstitute.net/) - educational material

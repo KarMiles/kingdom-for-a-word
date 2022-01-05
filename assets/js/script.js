@@ -15,7 +15,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 checkAnswer();
             } else {
                 let gameType = this.getAttribute("data-type");
-                startModal();
+                // show modal with game instructions only when user clicks a button first time during session
+                if (!sessionStorage.getItem("runOnce")) {
+                    startModal();
+                    sessionStorage.setItem("runOnce", true);
+                }
                 runGame(gameType);
             }
         })
