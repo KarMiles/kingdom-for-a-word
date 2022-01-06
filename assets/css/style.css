@@ -40,11 +40,15 @@ header > p {
 /* MAIN */
 
 /* visibility */
-#start-screen {
+#startScreen {
     display: initial;
 }
 
-#game-screen {
+#gameScreen {
+    display: none;
+}
+
+#feedbackScreen {
     display: none;
 }
 

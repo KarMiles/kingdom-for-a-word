@@ -4,10 +4,30 @@
  */
 
 /**
+ * Show required screen: startScreen, gameScreen or feedbackScreen.
+ * Hide other screens.
+ * @param {string} screen 
+ */
+function setScreen(screen) {
+    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("gameScreen").style.display = "none";
+    document.getElementById("feedbackScreen").style.display = "none";
+    if (screen === "startScreen") {
+        document.getElementById("startScreen").style.display = "block";
+    } else if (screen === "gameScreen") {
+        document.getElementById("gameScreen").style.display = "block";
+    } else {
+        document.getElementById("feedbackScreen").style.display = "block";
+    }
+    // eval(`document.getElementById("${screen}").style.display = "block";`);
+}
+
+/**
  * Wait for the DOM to finish loading before allowing the game to be played.
  * Get button elements and add event listeners to them.
  */
 document.addEventListener("DOMContentLoaded", function(){
+    setScreen("startScreen");
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {   //newer version of: for (let i = 0; i < buttons.length; i++)
         button.addEventListener("click", function() {
@@ -21,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     sessionStorage.setItem("runOnce", true);
                 }
                 runGame(gameType);
+                // setScreen(startScreen);
             }
         })
     }
@@ -41,8 +62,10 @@ document.addEventListener("DOMContentLoaded", function(){
  */
 function runGame(gameType) {
     // hide initial screen and show game screen
-    document.getElementById("start-screen").style.display = "none";
-    document.getElementById("game-screen").style.display = "initial";
+    setScreen("gameScreen");
+    // document.getElementById("startScreen").style.display = "none";
+    // document.getElementById("feedbackScreen").style.display = "none";
+    // document.getElementById("gameScreen").style.display = "initial";
 
     // clear and focus cursor on answer box 
     document.getElementById("answer-box").value = "";
@@ -88,13 +111,13 @@ function checkAnswer() {
     if(isCorrect) {
         incrementSuccessCount();
         alert("Congratulations! Your answer is correct!");
-        startModalFeedback();
+        showFeedback();
     } else if(noAnswer) {
         alert(`Enter your guess in the white input box!`);
     } else {
         incrementFailCount();
         alert(`Unfortunately word "${userAnswer}" is not in the thesaurus.`);
-        startModalFeedback();
+        showFeedback();
     }
 
     showPraise();
@@ -132,3 +155,39 @@ function showPraise() {
     }
 }
 
+// FEEDBACK SCREEN
+
+/**
+ * Show feedback screen after a given number of games 
+ *  */ 
+ function showFeedback() {
+    // set counters
+    let oldSuccessCount = parseInt(document.getElementById("success-count").innerText);
+    let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
+    let counter = oldSuccessCount + oldFailCount;
+ 
+
+    // set allowed number of sessions in a game
+    allowedGamesInSession = 2;
+
+    console.log(`Current total points counter is: ${counter} out of ${allowedGamesInSession} allowed.`);
+
+    // show feedback screen after set amout of games
+    if(counter >= allowedGamesInSession) {
+        // hide show game screen
+        document.getElementById("startScreen").style.display = "none";
+        document.getElementById("gameScreen").style.display = "none";
+        document.getElementById("feedbackScreen").style.display = "block";
+    }
+
+    // Show feedback info
+    document.getElementById("wins").innerHTML = oldSuccessCount;
+    document.getElementById("sum").innerHTML = oldSuccessCount + oldFailCount;
+    if(oldSuccessCount > oldFailCount) {
+        document.getElementById("startFeedback").innerHTML = "Bravo!"
+        document.getElementById("endFeedback").innerHTML = "Well done!"
+    } else {
+        document.getElementById("startFeedback").innerHTML = "The thing is..."
+        document.getElementById("endFeedback").innerHTML = "Better luck next time!"
+    }
+}

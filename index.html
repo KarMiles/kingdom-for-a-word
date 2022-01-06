@@ -36,28 +36,27 @@
     </header>
 
     <!-- Starting screen, shown on page load and after game restart -->
-    <div id="start-screen">
+    <div id="startScreen">
         <div id="make-choice">
             <p>
                 Choose difficulty to start the game:
             </p>
         </div>
-        
         <div class="container"> 
-            <button id="easy" class="startMed">
+            <button id="easy">
                 Easy
             </button>
-            <button id="medium" class="startMed">
+            <button id="medium">
                 Medium
             </button>
-            <button id="difficult" class="startMed">
+            <button id="difficult">
                 Difficult
             </button>
         </div>
     </div>
 
     <!-- Game screen, shown after difficulty choice is made -->
-    <div id="game-screen">
+    <div id="gameScreen">
         <div class="container">
             <p id="word-pop">Word</p>
             <p id="answer-message">Key in your guess:</p>
@@ -71,11 +70,17 @@
     <div class="spacer"></div>
 
     <!-- Feedback screen, shown after difficulty choice is made -->
-    <div id="feedback-screen">
+    <div id="feedbackScreen">
         <div class="container">
+            <h1 id="startFeedback">Bravo!</h1>
+            <p>You've completed the round.</p>
+            <p>Your score is <span id="wins"></span> wins out of <span id="sum"></span> games.</p>
+            <p id="endFeedback"></p>
             <p class = "score"><i class="far fa-thumbs-up"></i></i> Successfull guesses: <span id=success-count>0</span></p>
             <p class = "score"><i class="far fa-thumbs-down"></i> Failed guesses: <span id=fail-count>0</span></p>
-            <p id="praise">Good luck!</p>
+            <div class="container">
+                <button>Close</button>
+            </div>
         </div>
     </div>
     <div class="spacer"></div>
@@ -90,6 +95,9 @@
             <p>If your guess is in the thesaurus you score a point.</p>
             <p>You have 5 tries in one round.</p>
             <p>Enjoy the game!</p>
+            <div class="container">
+                <button id="closeModal">Close</button>
+            </div>
         </div>
     </div>
 
@@ -98,13 +106,7 @@
     <div id="modalFeedback" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <h1 id="startFeedback">Bravo!</h1>
-            <p>You've completed the round.</p>
-            <p>Your score is <span id="wins"></span> wins out of <span id="sum"></span> games.</p>
-            <p id="endFeedback"></p>
-            <div class="container">
-                <button id="closeFeedbackBtn">Close</button>
-            </div>
+
         </div>
     </div>
 
