@@ -74,7 +74,6 @@
     <div id="modalInstructions" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
             <h1>How to play</h1>
             <p>Kingdom for the Word! is a word-game fantastic for exercising linguistic skills. </p>
             <p>Type a word related to the one shown on screen.</p>
@@ -85,15 +84,17 @@
     </div>
 
     
-    <!-- Modal, shown over screen after 10 games -->
+    <!-- Modal, shown over screen after set amount of games -->
     <div id="modalFeedback" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1>Bravo!</h1>
+            <h1 id="startFeedback">Bravo!</h1>
             <p>You've completed the round.</p>
-            <p>Your score is <span id="wins"></span> wins and <span id="losses"></span> losses.</p>
-            <p></p>
+            <p>Your score is <span id="wins"></span> wins out of <span id="sum"></span> games.</p>
+            <p id="endFeedback"></p>
+            <div class="container">
+                <button>Close</button>
+            </div>
         </div>
     </div>
 

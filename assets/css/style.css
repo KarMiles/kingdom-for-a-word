@@ -89,6 +89,7 @@ a {
     text-align: center;
     padding: 5px 10px;
     display: inline-block;
+    max-width: 95%;
 }
 
 #word-pop {
@@ -241,18 +242,4 @@ footer a {
     width: 80%;
     border-radius: 5px;
     max-height: 100%;
-}
-
-  /* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover, .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
 }
