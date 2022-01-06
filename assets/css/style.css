@@ -41,7 +41,7 @@ header > p {
 
 /* visibility */
 #start-screen {
-    display: initial; /* unset or none */
+    display: initial;
 }
 
 #game-screen {

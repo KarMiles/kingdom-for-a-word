@@ -161,7 +161,8 @@ Steps for cloning repository:
 
 # Bugs and changes to original desing
 During realisation of the project the following obstacles were met and changes to original design introduced:
-* Reference to a variable currentRandomWord didn't work, despite testing via console.log(currentRandomWord) showing appropriate value. Problem was in dot notation. Changing to traditional bracket [] notation solved the problem.
+* Reference to a variable currentRandomWord didn't work, despite testing via console.log(currentRandomWord) showing appropriate value. Problem was in dot notation. Changing to traditional bracket notation solved the problem.
+* Second modal on the page, containing feedback, was not working as expected. Decided on replacing modal with additional screen.
 # Credits
 ## Code
 n/a 

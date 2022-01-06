@@ -36,10 +36,15 @@ function startModalFeedback() {
     allowedGamesInSession = 2;
     // send modal to screen after set amout of games
     if(counter >= allowedGamesInSession) {
+        document.getElementById("answer-box").addEventListener("Enter", function(event){
+            event.preventDefault();
+        });
+        document.activeElement.blur();
+        document.getElementById("closeFeedbackBtn").focus();
         modalFeedb.style.display = "block";
     }
 
-    // send feedback info
+    // Show feedback info
     document.getElementById("wins").innerHTML = oldSuccessCount;
     document.getElementById("sum").innerHTML = oldSuccessCount + oldFailCount;
     if(oldSuccessCount > oldFailCount) {
@@ -49,10 +54,6 @@ function startModalFeedback() {
         document.getElementById("startFeedback").innerHTML = "The thing is..."
         document.getElementById("endFeedback").innerHTML = "Better luck next time!"
     }
-
-    // reset screen
-    document.getElementById("start-screen").style.display = "initial";
-    document.getElementById("game-screen").style.display = "none";
 }
 
 // CLOSING THE FEEDBACK MODAL
@@ -61,7 +62,15 @@ var closeFeedbackModal = document.getElementById("closeFeedbackBtn");
 
 // When the user clicks on Close button, close the modal
 closeFeedbackModal.onclick = function() {
+    // close modal
     modalFeedback.style.display = "none";
+    // reset screen
+    document.getElementById("start-screen").style.display = "block";
+    document.getElementById("game-screen").style.display = "none";
+    // document.getElementById("success-count").innerHTML = "0";
+    // document.getElementById("success-fail").innerHTML = "0";
+    
+    // document.getElementById("closeFeedbackBtn").focus();
 }
 
 // When the user clicks anywhere outside of the modal, close it

@@ -70,7 +70,17 @@
     </div>
     <div class="spacer"></div>
 
-    <!-- Modal, shown over screen after level choice is made -->
+    <!-- Feedback screen, shown after difficulty choice is made -->
+    <div id="feedback-screen">
+        <div class="container">
+            <p class = "score"><i class="far fa-thumbs-up"></i></i> Successfull guesses: <span id=success-count>0</span></p>
+            <p class = "score"><i class="far fa-thumbs-down"></i> Failed guesses: <span id=fail-count>0</span></p>
+            <p id="praise">Good luck!</p>
+        </div>
+    </div>
+    <div class="spacer"></div>
+
+    <!-- Modal with game instructions, shown over screen after game level is chosen -->
     <div id="modalInstructions" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
@@ -78,13 +88,13 @@
             <p>Kingdom for the Word! is a word-game fantastic for exercising linguistic skills. </p>
             <p>Type a word related to the one shown on screen.</p>
             <p>If your guess is in the thesaurus you score a point.</p>
-            <p>You have 10 tries in one round.</p>
+            <p>You have 5 tries in one round.</p>
             <p>Enjoy the game!</p>
         </div>
     </div>
 
     
-    <!-- Modal, shown over screen after set amount of games -->
+    <!-- Modal with feedback, shown over screen after set amount of games -->
     <div id="modalFeedback" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
@@ -93,7 +103,7 @@
             <p>Your score is <span id="wins"></span> wins out of <span id="sum"></span> games.</p>
             <p id="endFeedback"></p>
             <div class="container">
-                <button>Close</button>
+                <button id="closeFeedbackBtn">Close</button>
             </div>
         </div>
     </div>
