@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 showFeedback();
             } else if (this.getAttribute("id") === "closeModal") {
                 closeModalInstructions();
+            } else if (this.getAttribute("id") === "closeFeedback") {
+                setScreen("startScreen")
             } else {
                 let gameType = this.getAttribute("id");
                 if (!sessionStorage.getItem("runOnce")) {
@@ -55,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 })
 
-// define global variable with default number of games in session
+// Define global variable to operate number of games in session
 var allowedGamesInSession; 
 
 /**
@@ -118,8 +120,7 @@ function checkAnswer() {
 
     // get a list of allowed answers
     let allowedAnswers = words[currentRandomWord];
-    console.log(`allowedAnsers = ${allowedAnswers}`);
-
+    
     // check if user's answer is on the list of allowed answers
     isCorrect = allowedAnswers.includes(userAnswer);
 
@@ -194,7 +195,6 @@ function showFeedback() {
     if(counter >= allowedGamesInSession) {
         // hide show game screen and show feedback screen
         setScreen("feedbackScreen");
-        console.log("Feedback screen should be shown? " + counter >= allowedGamesInSession);
         
         // reset counters
         document.getElementById("success-count").innerText = 0;
