@@ -67,7 +67,7 @@ function runGame(gameType) {
     // hide initial screen and show game screen
     setScreen("gameScreen");
 
-    // clear and focus cursor on answer box 
+    // clear answer box and focus cursor on it 
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
 
@@ -118,6 +118,7 @@ function checkAnswer() {
 
     // get a list of allowed answers
     let allowedAnswers = words[currentRandomWord];
+    console.log(`allowedAnsers = ${allowedAnswers}`);
 
     // check if user's answer is on the list of allowed answers
     isCorrect = allowedAnswers.includes(userAnswer);
@@ -134,6 +135,17 @@ function checkAnswer() {
         alert(`Unfortunately word "${userAnswer}" is not in the thesaurus.`);
         showFeedback();
     }
+
+    // get random word for the game
+    currentRandomWord = getRandomWord();
+    document.getElementById("word-pop").innerHTML = currentRandomWord;
+
+
+    // clear and focus cursor on answer box 
+    document.getElementById("answer-box").value = "";
+    document.getElementById("answer-box").focus();
+
+    updateAnswerMessage();
 
     showPraise();
 }
@@ -183,7 +195,11 @@ function showFeedback() {
         // hide show game screen and show feedback screen
         setScreen("feedbackScreen");
         console.log("Feedback screen should be shown? " + counter >= allowedGamesInSession);
-    }
+        
+        // reset counters
+        document.getElementById("success-count").innerText = 0;
+        document.getElementById("fail-count").innerText = 0;
+        }
 
     // Show feedback info
     document.getElementById("wins").innerHTML = oldSuccessCount;
