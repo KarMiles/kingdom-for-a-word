@@ -39,18 +39,18 @@
     <div id="startScreen">
         <div id="make-choice">
             <p>
-                Choose difficulty to start the game:
+                Choose game mode to start:
             </p>
         </div>
         <div class="container"> 
             <button id="easy">
                 Easy
             </button>
-            <button id="medium">
-                Medium
+            <button id="normal">
+                Normal
             </button>
-            <button id="difficult">
-                Difficult
+            <button id="challenge">
+                Challenge
             </button>
         </div>
     </div>
@@ -59,7 +59,7 @@
     <div id="gameScreen">
         <div class="container">
             <p id="word-pop">Word</p>
-            <p id="answer-message">Key in your guess:</p>
+            <p id="answer-message">Your guess <span id="gameNumber"></span> out of <span id="gamesInSession"></span>:</p>
             <input id="answer-box" type="text">
             <button data-type="submit">Submit Answer</button>
             <p class = "score"><i class="far fa-thumbs-up"></i></i> Successfull guesses: <span id=success-count>0</span></p>
@@ -93,20 +93,11 @@
             <p>Kingdom for the Word! is a word-game fantastic for exercising linguistic skills. </p>
             <p>Type a word related to the one shown on screen.</p>
             <p>If your guess is in the thesaurus you score a point.</p>
-            <p>You have 5 tries in one round.</p>
+            <p>You have a limited number of tries in one round depending on your game choice.</p>
             <p>Enjoy the game!</p>
             <div class="container">
                 <button id="closeModal">Close</button>
             </div>
-        </div>
-    </div>
-
-    
-    <!-- Modal with feedback, shown over screen after set amount of games -->
-    <div id="modalFeedback" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-
         </div>
     </div>
 
@@ -139,7 +130,7 @@
         </div>
     </footer>
 
-    <!-- Game functionality -->
+    <!-- Site functionality -->
     <script src="assets/js/script.js"></script>
     <!-- Words for the game -->
     <script src="assets/js/words.js"></script>

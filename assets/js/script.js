@@ -19,7 +19,6 @@ function setScreen(screen) {
     } else {
         document.getElementById("feedbackScreen").style.display = "block";
     }
-    // eval(`document.getElementById("${screen}").style.display = "block";`);
 }
 
 /**
@@ -33,15 +32,17 @@ document.addEventListener("DOMContentLoaded", function(){
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
+                showFeedback();
+            } else if (this.getAttribute("id") === "closeModal") {
+                closeModalInstructions();
             } else {
-                let gameType = this.getAttribute("data-type");
-                // show modal with game instructions only when user clicks a button first time during session
+                let gameType = this.getAttribute("id");
                 if (!sessionStorage.getItem("runOnce")) {
                     startModalInstructions();
                     sessionStorage.setItem("runOnce", true);
                 }
+                console.log(`gameType is: ${gameType}.`);
                 runGame(gameType);
-                // setScreen(startScreen);
             }
         })
     }
@@ -52,20 +53,19 @@ document.addEventListener("DOMContentLoaded", function(){
             checkAnswer();
         }
     })
-
 })
+
+// define global variable with default number of games in session
+var allowedGamesInSession; 
 
 /**
  * Main game setup
  * @returns {void}
- * @param gameType
+ * @param gameType possible game modes: easy, medium, challenge.
  */
 function runGame(gameType) {
     // hide initial screen and show game screen
     setScreen("gameScreen");
-    // document.getElementById("startScreen").style.display = "none";
-    // document.getElementById("feedbackScreen").style.display = "none";
-    // document.getElementById("gameScreen").style.display = "initial";
 
     // clear and focus cursor on answer box 
     document.getElementById("answer-box").value = "";
@@ -74,6 +74,21 @@ function runGame(gameType) {
     // get random word for the game
     let currentRandomWord = getRandomWord();
     document.getElementById("word-pop").innerHTML = currentRandomWord;
+
+    // set number of games in session
+    switch (gameType) {
+        case "easy":
+            allowedGamesInSession = 3;
+            break;
+        case "medium":
+            allowedGamesInSession = 5;
+            break;
+        case "challenge":
+            allowedGamesInSession = 7;
+            break;
+    }
+
+    updateAnswerMessage();
 }
 
 /**
@@ -121,9 +136,6 @@ function checkAnswer() {
     }
 
     showPraise();
-
-    // reset the random word and clear entry box
-    runGame();
 }
 
 /**
@@ -160,24 +172,17 @@ function showPraise() {
 /**
  * Show feedback screen after a given number of games 
  *  */ 
- function showFeedback() {
+function showFeedback() {
     // set counters
     let oldSuccessCount = parseInt(document.getElementById("success-count").innerText);
     let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
     let counter = oldSuccessCount + oldFailCount;
- 
-
-    // set allowed number of sessions in a game
-    allowedGamesInSession = 2;
-
-    console.log(`Current total points counter is: ${counter} out of ${allowedGamesInSession} allowed.`);
 
     // show feedback screen after set amout of games
     if(counter >= allowedGamesInSession) {
-        // hide show game screen
-        document.getElementById("startScreen").style.display = "none";
-        document.getElementById("gameScreen").style.display = "none";
-        document.getElementById("feedbackScreen").style.display = "block";
+        // hide show game screen and show feedback screen
+        setScreen("feedbackScreen");
+        console.log("Feedback screen should be shown? " + counter >= allowedGamesInSession);
     }
 
     // Show feedback info
@@ -190,4 +195,22 @@ function showPraise() {
         document.getElementById("startFeedback").innerHTML = "The thing is..."
         document.getElementById("endFeedback").innerHTML = "Better luck next time!"
     }
+}
+
+/**
+ * Update information for answer message:
+ * current entry number,
+ * allowed games in session.
+ */
+function updateAnswerMessage() {
+    // Information for answer message
+    let oldSuccessCount = parseInt(document.getElementById("success-count").innerText);
+    let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
+    let counter = oldSuccessCount + oldFailCount;
+    // current game number
+    document.getElementById("gameNumber").innerHTML = counter + 1;
+    // number of games in session
+    document.getElementById("gamesInSession").innerHTML = allowedGamesInSession;
+
+    console.log(`Current total points counter is: ${counter + 1} out of ${allowedGamesInSession} allowed.`);
 }
