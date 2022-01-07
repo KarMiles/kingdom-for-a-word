@@ -177,6 +177,8 @@ function showPraise() {
     let showPraise = oldSuccessCount > oldFailCount;
     if(showPraise) {
         document.getElementById("praise").innerHTML="You're doing great, keep it up!"
+    } else {
+        document.getElementById("praise").innerHTML=""
     }
 }
 
