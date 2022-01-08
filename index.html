@@ -14,7 +14,7 @@
 
     <!-- oryginal style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="docs/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="docs/favicon/favicon-16x16.png" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom for a Word!</title>
@@ -72,11 +72,11 @@
     <div id="feedbackScreen">
         <div class="container">
             <h1 id="startFeedback">Bravo!</h1>
-            <p>You've completed the round.</p>
-            <p>Your score is <span id="wins"></span> wins out of <span id="sum"></span> games.</p>
-            <p id="endFeedback"></p>
-            <!-- <p class = "score"><i class="far fa-thumbs-up"></i></i> Successfull guesses: <span id=success-count>0</span></p> -->
-            <!-- <p class = "score"><i class="far fa-thumbs-down"></i> Failed guesses: <span id=fail-count>0</span></p> -->
+            <div class="combine">
+                <p>You've completed the round.</p>
+                <p>Your score is <span id="wins"></span> wins out of <span id="sum"></span> games.</p>
+                <p id="endFeedback"></p>
+            </div>
             <div class="container">
                 <button id="closeFeedback">Close</button>
             </div>
@@ -87,8 +87,9 @@
     <div id="modalInstructions" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <h1>How to play</h1>
-            <p>Kingdom for the Word! is a word-game fantastic for exercising linguistic skills. </p>
+            <h1><img id="logo" src="assets/images/logo-knight-black.jpg" alt="logo"> How to play</h1>
+            <p>Kingdom for the Word! is a word-game inspired by the story of King Richard the Third as told in William Shakespeare's drama. There a horse was worth the kindgdom when it was badly needed. Maybe you know the feeling when you're in search of a missing word?!</p>
+            <p>Kindgom for the Word! is fantastic for exercising linguistic skills! </p>
             <p>Type a word related to the one shown on screen.</p>
             <p>If your guess is in the thesaurus you score a point.</p>
             <p>You have a limited number of tries in one round depending on your game choice.</p>
