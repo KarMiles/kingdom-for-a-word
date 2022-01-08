@@ -186,6 +186,8 @@ n/a
 
 [Font Awesome](https://fontawesome.com/) - sourcing icons
 
+[Bootstrap](https://getbootstrap.com) - email functionality
+
 [Favicon Generator](https://favicon.io/favicon-generator/) - favicon creation
 
 [Pikwizard](https://pikwizard.com/) - stock photographs

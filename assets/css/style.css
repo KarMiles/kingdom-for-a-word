@@ -81,14 +81,14 @@ a {
     display: inline-block;
 }
 
-.container {
+.containers {
     justify-content: center;
     align-items: center;
     display: grid;  
     margin-top: 1rem;
 }
 
-.container p {
+.containers p {
     background:rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 5px 10px;
@@ -124,10 +124,10 @@ a {
 
 /* buttons */
 
-.container button {
+.containers button {
     font-family: 'UnifrakturCook', cursive;
     font-size: x-large;
-    color: #050403;
+    color: #050403; 
     text-decoration: none;
     text-align: center;
     
@@ -143,16 +143,16 @@ a {
     border-radius: 5px;
 }
 
-.container button:hover {
+.containers button:hover {
     background-color: #F2F0EF;
     cursor: pointer;
 }
 
-.container {
+.containers {
     padding: 0.5rem 0;
 }
 
-.container p {
+.containers p {
     margin: 0;
 }
 
@@ -212,6 +212,57 @@ a {
 .symbol {
     font-size: xx-large;
 }
+
+.symbol-large {
+    font-size: 48px;
+    text-align: center;
+}
+
+/* CONTACT */
+#contact {
+    color: black;
+}
+
+.contact-form {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: x-large;
+    color: #050403; 
+    text-decoration: none;
+    text-align: center;
+    background-color: #D4CECA;
+    margin: 5px;
+
+    /* display: inline-block; */
+    margin-left: auto;
+    margin-right: auto;
+
+    border-color: black;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #F2F0EF;
+    color: #050403; 
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: black;
+    background-color: #F2F0EF;
+}
+
+#contact :hover {
+    color: black;
+}
+
+header a:hover {
+    color: white;
+}
+
 
 /* FOOTER */
 

@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     document.getElementById("closeModalFbk").focus();
                     }
                 })
-                
             } else if (this.getAttribute("id") === "closeModal") {
                 closeModalInstructions();
             } else if (this.getAttribute("id") === "closeFeedback") {

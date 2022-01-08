@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
 
+    <!--Bootstrap v5.0-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- EmailJS (script needs to be here to work) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
     <!-- oryginal style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="docs/favicon/favicon-16x16.png" type="image/x-icon">
@@ -35,82 +41,35 @@
         </p>
     </header>
 
-    <!-- Starting screen, shown on page load and after game restart -->
-    <div id="startScreen">
-        <div id="make-choice">
-            <p>
-                Choose game mode to start:
-            </p>
-        </div>
-        <div class="containers"> 
-            <button id="easy">
-                Easy
-            </button>
-            <button id="medium">
-                Normal
-            </button>
-            <button id="challenge">
-                Challenge
-            </button>
-        </div>
-    </div>
-
-    <!-- Game screen, shown after difficulty choice is made -->
-    <div id="gameScreen">
-        <div class="containers">
-            <p id="word-pop">Word</p>
-            <p id="answer-message">Your guess <span id="gameNumber"></span> out of <span id="gamesInSession"></span>:</p>
-            <input id="answer-box" type="text">
-            <button data-type="submit">Submit Answer</button>
-            <p class = "score"><i class="far fa-thumbs-up"></i></i> Successfull guesses: <span id=success-count>0</span></p>
-            <p class = "score"><i class="far fa-thumbs-down"></i> Failed guesses: <span id=fail-count>0</span></p>
-            <p id="praise">Good luck!</p>
-        </div>
-    </div>
-    
-    <!-- Feedback screen, shown after difficulty choice is made -->
-    <div id="feedbackScreen">
-        <div class="containers">
-            <h1 id="startFeedback">Bravo!</h1>
-            <div class="combine">
-                <p>You've completed the round.</p>
-                <p>Your score is <span id="wins"></span> wins out of <span id="sum"></span> games.</p>
-                <p id="endFeedback"></p>
-            </div>
-            <div class="containers">
-                <button id="closeFeedback">Close</button>
+    <main id="contact">
+        <div class="row gx-0 justify-content-center mb-2 pb-3">
+            <div class="game-container row gx-0 justify-content-center">
+                <div id="container" class="row border bg-light col-12 col-md-6 col-sm-8 p-1 p-sm-3 align-items-center">
+                    <!-- Contact form, code taken from Bootstrap v5.0 code snippet https://getbootstrap.com/docs/5.0/forms/overview/#overview -->
+                    <form id="contact-form">
+                        <p>Please leave your feedback about the game below:</p>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" name="message" required></textarea>
+                        </div>
+                        <button id="submit" type="submit" class="my-btn btn btn-primary">Submit</button>
+                        <a href="index.html" class="return-btn btn btn-primary">Return to game</a>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Modal with game instructions, shown over screen after user chose game level -->
-    <div id="modalInstructions" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <h1><img id="logo" src="assets/images/logo-knight-black.jpg" alt="logo"> How to play</h1>
-            <p>Kingdom for the Word! is a word-game inspired by the story of King Richard the Third as told in William Shakespeare's drama. There a horse was worth the kindgdom when it was badly needed. Maybe you know the feeling when you're in search of a missing word?!</p>
-            <p>Kindgom for the Word! is fantastic for exercising linguistic skills! </p>
-            <p>Type a word related to the one shown on screen.</p>
-            <p>If your guess is in the thesaurus you score a point.</p>
-            <p>You have a limited number of tries in one round depending on your game choice.</p>
-            <p>Enjoy the game!</p>
-            <div class="containers">
-                <button id="closeModal">Close</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal with feedback showing after user entered word -->
-    <div id="modalFeedback" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <h1></h1>
-            <p id="guessResult">Good guess!</p>
-            <div class="containers">
-                <button id="closeModalFbk">Close</button>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <div class="spacer"></div>
     <!-- Footer -->
@@ -145,8 +104,6 @@
         <div class="footer-description">
             <p>Educational project. Author: Karol Mileszko. January 2022.</p>
         </div>
-
-    <div class="spacer"></div>    
     </footer>
 
     <!-- Site functionality -->
@@ -155,5 +112,8 @@
     <script src="assets/js/words.js"></script>
     <!-- Modal functionality -->
     <script src="assets/js/modal.js"></script>
+    <!-- EmailJS functionality -->
+    <script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 </html>
