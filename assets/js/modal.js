@@ -45,10 +45,21 @@ var modalFbk = document.getElementById("modalFeedback");
 
 /**
  * Start modal with instructions
+ * @param {string} guess - can be "success" or "fail"
  */
-function startModalFeedback() {
+function startModalFeedback(guess) {
     // show modal
     modalFbk.style.display = "block";
+    // set text for modal
+    if (guess === "success") {
+        document.getElementById("guessResult").innerText = "Your answer is correct!";
+    } else if (guess === "fail") {
+        let userAnswer = document.getElementById("answer-box").value;
+        document.getElementById("guessResult").innerText = `Unfortunately word "${userAnswer}" is not in the thesaurus.`
+    } else { 
+        document.getElementById("guessResult").innerText = "Please enter valid answer!"
+    }
+
     // close modal on Enter key press
     document.getElementById("closeModalFbk").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {

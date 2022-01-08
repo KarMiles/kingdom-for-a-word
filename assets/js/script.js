@@ -134,14 +134,15 @@ function checkAnswer() {
     if(isCorrect) {
         incrementSuccessCount();
         // alert("Congratulations! Your answer is correct!");  // version with alert
-        startModalFeedback();
+        startModalFeedback("success");
         showFeedback();
     } else if(noAnswer) {
-        alert(`Enter your guess in the white input box!`);
+        startModalFeedback();
+        // alert(`Enter your guess in the white input box!`);
     } else {
         incrementFailCount();
         // alert(`Unfortunately word "${userAnswer}" is not in the thesaurus.`);  // version with alert
-        startModalFeedback();
+        startModalFeedback("fail");
         showFeedback();
     }
 
