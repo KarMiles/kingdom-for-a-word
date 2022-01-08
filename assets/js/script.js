@@ -12,8 +12,10 @@ function setScreen(screen) {
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("gameScreen").style.display = "none";
     document.getElementById("feedbackScreen").style.display = "none";
+    document.getElementById("modalFeedback").style.display = "none";
     if (screen === "startScreen") {
         document.getElementById("startScreen").style.display = "block";
+        document.getElementById("answer-box").focus();  // NOT WORKING
     } else if (screen === "gameScreen") {
         document.getElementById("gameScreen").style.display = "block";
     } else {
@@ -36,7 +38,11 @@ document.addEventListener("DOMContentLoaded", function(){
             } else if (this.getAttribute("id") === "closeModal") {
                 closeModalInstructions();
             } else if (this.getAttribute("id") === "closeFeedback") {
-                setScreen("startScreen")
+                setScreen("startScreen");
+            }else if (this.getAttribute("id") === "closeModalFbk") {
+                console.log("closeModalFbk button clicked")
+                setScreen("gameScreen");
+                document.getElementById("answer-box").focus();
             } else {
                 let gameType = this.getAttribute("id");
                 if (!sessionStorage.getItem("runOnce")) {
@@ -127,13 +133,15 @@ function checkAnswer() {
     // update scores
     if(isCorrect) {
         incrementSuccessCount();
-        alert("Congratulations! Your answer is correct!");
+        // alert("Congratulations! Your answer is correct!");  // version with alert
+        startModalFeedback();
         showFeedback();
     } else if(noAnswer) {
         alert(`Enter your guess in the white input box!`);
     } else {
         incrementFailCount();
-        alert(`Unfortunately word "${userAnswer}" is not in the thesaurus.`);
+        // alert(`Unfortunately word "${userAnswer}" is not in the thesaurus.`);  // version with alert
+        startModalFeedback();
         showFeedback();
     }
 
