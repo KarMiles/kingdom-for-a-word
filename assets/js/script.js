@@ -35,13 +35,6 @@ document.addEventListener("DOMContentLoaded", function(){
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
                 showFeedback();
-                // close modal on Enter key press
-                document.getElementById("closeModalFbk").addEventListener("keydown", function(event) {
-                    if (event.key === "Enter") {
-                    modalFbk.style.display = "none";
-                    document.getElementById("closeModalFbk").focus();
-                    }
-                })
             } else if (this.getAttribute("id") === "closeModal") {
                 closeModalInstructions();
             } else if (this.getAttribute("id") === "closeFeedback") {
@@ -68,6 +61,40 @@ document.addEventListener("DOMContentLoaded", function(){
             checkAnswer();
         }
     })
+
+    // PROBLEM - I want pressing Enter key to do the same as pressing the button on active modal or screen. 
+    // I got it working on answer-box but not anywhere else.
+    // $('.modal').on('keydown', function(e) {
+    //     if (e.keyCode === 13) {
+    //     e.preventDefault();
+    //     e.stopImmediatePropagation();
+    //     checkAnswer();
+    //     console.log("Enter key pressed!");
+    //     }
+    // });
+
+    // close modal on Enter key press NOT WORKING
+    // document.getElementById("modalFeedback").addEventListener("click", function(event){
+    //     event.preventDefault();
+    //     document.getElementById("answer-box").blur();
+    //     document.getElementsByTagname("closeModalFbk").focus();
+    //     document.getElementsByTagname("closeModalFbk").click();
+    // });
+
+    // document.getElementsByTagName("modal").addEventListener("click", function(event){
+    //     event.preventDefault();
+    //     document.getElementById("answer-box").blur();
+    //     document.getElementsByTagname("closeModalFbk").focus();
+    //     document.getElementsByTagname("closeModalFbk").click();
+    // });
+
+    // window.onclick("click", function(event){
+    //     event.preventDefault();
+    //     document.getElementById("answer-box").blur();
+    //     document.getElementsByTagname("closeModalFbk").focus();
+    //     document.getElementsByTagname("closeModalFbk").click();
+    // });
+
 })
 
 // Define global variable to operate number of games in session
@@ -221,13 +248,15 @@ function showFeedback() {
 
     // Show feedback info
     document.getElementById("wins").innerHTML = oldSuccessCount;
-    document.getElementById("sum").innerHTML = oldSuccessCount + oldFailCount;
+    document.getElementById("sum").innerHTML = allowedGamesInSession;
     if(oldSuccessCount > oldFailCount) {
-        document.getElementById("startFeedback").innerHTML = "Bravo!"
-        document.getElementById("endFeedback").innerHTML = "Well done!"
+        document.getElementById("startFeedback").innerHTML = "Bravo!";
+        document.getElementById("endFeedback").innerHTML = "Well done!";
+        document.getElementById("symbol-large").innerHTML = '<i class="fas fa-shield-alt"></i>';
     } else {
-        document.getElementById("startFeedback").innerHTML = "The thing is..."
-        document.getElementById("endFeedback").innerHTML = "Better luck next time!"
+        document.getElementById("startFeedback").innerHTML = "The thing is...";
+        document.getElementById("endFeedback").innerHTML = "Better luck next time!";
+        document.getElementById("symbol-large").innerHTML = '<i class="fas fa-times"></i>';
     }
 }
 
