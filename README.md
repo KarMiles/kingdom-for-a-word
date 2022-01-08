@@ -1,3 +1,13 @@
+# Kingdom for a Word!
+Developer: Karol Mileszko
+
+![Mockup image](docs/validation/am-i-responsive.jpg)
+
+[Live webpage](https://karmiles.github.io/kingdom-for-a-word/)
+
+## Table of content
+...
+
 ## Introduction
 **The idea for the project**
 

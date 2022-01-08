@@ -35,6 +35,14 @@ document.addEventListener("DOMContentLoaded", function(){
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
                 showFeedback();
+                // close modal on Enter key press
+                document.getElementById("closeModalFbk").addEventListener("keydown", function(event) {
+                    if (event.key === "Enter") {
+                    modalFbk.style.display = "none";
+                    document.getElementById("closeModalFbk").focus();
+                    }
+                })
+                
             } else if (this.getAttribute("id") === "closeModal") {
                 closeModalInstructions();
             } else if (this.getAttribute("id") === "closeFeedback") {
