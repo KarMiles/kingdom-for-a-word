@@ -263,6 +263,10 @@ header a:hover {
     color: white;
 }
 
+#error {
+    text-align: center;
+    font-size: larger;
+}
 
 /* FOOTER */
 
