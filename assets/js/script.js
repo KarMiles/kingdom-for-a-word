@@ -249,3 +249,8 @@ function updateAnswerMessage() {
 
     console.log(`Current total points counter is: ${counter + 1} out of ${allowedGamesInSession} allowed.`);
 }
+
+// PREVENT REPEATING WORDS
+// Create variable to store list of words which were already selected
+// var used = "";
+

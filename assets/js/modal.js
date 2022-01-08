@@ -52,12 +52,12 @@ function startModalFeedback(guess) {
     modalFbk.style.display = "block";
     // set text for modal
     if (guess === "success") {
-        document.getElementById("guessResult").innerText = "Your answer is correct!";
+        document.getElementById("guessResult").innerHTML = '<i class="fas fa-shield-alt symbol"></i><br><br>Your answer is correct!';
     } else if (guess === "fail") {
         let userAnswer = document.getElementById("answer-box").value;
-        document.getElementById("guessResult").innerText = `Unfortunately word "${userAnswer}" is not in the thesaurus.`
+        document.getElementById("guessResult").innerHTML = `<i class="fas fa-times symbol"></i></i><br><br>Unfortunately word "${userAnswer}" is not in the thesaurus.`
     } else { 
-        document.getElementById("guessResult").innerText = "Please enter valid answer!"
+        document.getElementById("guessResult").innerHTML = '<i class="fas fa-exclamation symbol"></i><br><br>Please enter valid answer!'
     }
 
     // close modal on Enter key press

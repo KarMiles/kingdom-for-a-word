@@ -99,14 +99,19 @@ a {
 #word-pop {
     font-size: xx-large;
     font-weight: bolder;
-    padding: 1rem auto;
-    margin-top: -1rem;
-    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+    /* margin-top: -1rem;
+    margin-bottom: 0.5rem; */
+    margin: -1rem 0 0.5rem;
+    width: 100%;
 }
 
 #answer-message {
-    margin-top: 0.7rem;
-    margin-bottom: 0.1rem
+    /* margin-top: 0.7rem;
+    margin-bottom: 0.1rem */
+    margin: 0.7rem 0 0;
+    padding: 0.4rem 0 0.4rem;
+    width: 100%;
 }
 
 #answer-box {
@@ -114,7 +119,7 @@ a {
     font-size: x-large;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    margin: 0.4rem 0 auto 4px;
+    margin: 0.4rem 0;
 }
 
 /* buttons */
@@ -141,6 +146,14 @@ a {
 .container button:hover {
     background-color: #F2F0EF;
     cursor: pointer;
+}
+
+.container {
+    padding: 0.5rem 0;
+}
+
+.container p {
+    margin: 0;
 }
 
 .score {
@@ -176,7 +189,7 @@ a {
     height: 100%; 
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 
   /* Modal Content */
@@ -192,16 +205,12 @@ a {
     max-height: 100%;
 }
 
-.container {
-    padding: 0.5rem auto;
-}
-
-.container p {
-    margin: 0 auto;
-}
-
 #modalFeedback * {
     text-align: center;
+}
+
+.symbol {
+    font-size: xx-large;
 }
 
 /* FOOTER */
