@@ -232,6 +232,10 @@ a {
     border-radius: 5px;
 }
 
+.form-text {
+    color: black;
+}
+
 .btn-primary {
     font-family: 'UnifrakturCook', cursive;
     font-size: x-large;
