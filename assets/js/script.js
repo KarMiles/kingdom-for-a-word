@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function(){
 // $('.answer-box').on('keydown', 'input', function(event) {
 document.getElementById("answer-box").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-
         event.preventDefault();
         event.stopImmediatePropagation();
 
