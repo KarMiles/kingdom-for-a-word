@@ -249,3 +249,10 @@ function updateAnswerMessage() {
 // Create variable to store list of words which were already selected
 // var used = "";
 
+function examples() {
+        // get random word for the game
+        let currentRandomWord = getRandomWord();
+        document.getElementById("word-pop").innerHTML = currentRandomWord;
+}
+
+
