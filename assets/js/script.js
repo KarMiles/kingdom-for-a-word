@@ -49,9 +49,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     startModalInstructions();
                     sessionStorage.setItem("runOnce", true);
                 }
-                startModalInstructions();
-                document.getElementById("modalInstructions").style.display = "block";
-                console.log("should start startModalInstructions function")
                 runGame(gameType);
             }
         });

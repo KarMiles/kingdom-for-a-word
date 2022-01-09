@@ -360,6 +360,7 @@ During realisation of the project the following obstacles were met and changes t
 * Second modal on the page, containing feedback, was not working as expected. Decided on replacing modal with additional screen.
 * Email sending mechanism not sending emails. Fixed by getting appropriate user, service and template IDs from EmailJS service.
 * Contact page generating script error messages in console, despite all functionality working as expected. Not resolved at time of writing.
+* Added functionality for user pressing Enter key. Works as expected on input box. Does not work as expected on Close buttons. Abandoned due to other priorities for this release.
 # Credits
 ## Code
 [Bootstrap](https://getbootstrap.com) - email form functionality
