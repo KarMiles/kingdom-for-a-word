@@ -6,6 +6,50 @@ Developer: Karol Mileszko
 [Live webpage](https://karmiles.github.io/kingdom-for-a-word/)
 
 ## Table of content
+
+1. [Introduction](#introduction)
+2. [Plane 1. Strategy](#plane-1-strategy)
+    1. [Project Goals](#project-goals)
+    2. [User Experience UX](#user-experience-ux)
+        1. [User stories](#user-stories)
+        2. [Focus](#focus)
+3. [Plane 2. Scope](#plane-2-scope)
+    1. [Objective requirements](#objective-requirements)
+    2. [Functional specifications](#functional-specifications)
+    3. [Content requirements](#content-requirements)
+    4. [Project rollout](#project-rollout)
+4. [Plane 3. Structure](#plane-3-structure)
+    1. [Prioritisation](#prioritisation)
+    2. [Semantic sections](#semantic-sections)
+5. [Plane 4. Skeleton](#plane-4-skeleton)
+6. [Plane 5. Surface](#plane-5-surface)
+    1. [Design choices](#design-choices)
+    2. [Colour](#colour)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+7. [Technologies used](#technologies-used)
+8. [Frameworks Libraries and Programs used](#frameworks-libraries-and-programs-used)
+    1. [Tools used](#tools-used)
+    2. [Features applied](#features-applied)
+9. [Deployment](#deployment)
+10. [Testing](#testing)
+    1. [Validators](#validators)
+        1. [W3C Markup Validator](#w3c-markup-validator)
+        2. [W3C CSS JigSaw Validator](#w3c-css-jigsaw-validator)
+    2. [User Experience UX testing](#user-experience-ux-testing)
+        1. [Visibility and functionality](#visibility-and-functionality)
+        2. [Accessibility](#accessibility)
+        3. [Performance](#performance)
+        4. [Browser compatibility](#browser-compatibility)
+        5. [Testing user stories](#testing-user-stories)
+        6. [Peer review](#peer-review)
+11. [Bugs and changes to original design](#bugs-and-changes-to-original-design)
+12. [Credits](#credits)
+    1. [Code](#code)
+    2. [Media](#media)
+    3. [Acknowledgements](#acknowledgements)
+
+## Table of content
 ...
 
 ## Introduction
@@ -168,6 +212,230 @@ Steps for cloning repository:
 6. Type "git clone", paste URL for SSH method from the clipboard (in this project: git clone git&#8203;@github.com:KarMiles/kingdom-for-a-word.git) and press Enter.
 
 # Testing
+## Validators
+
+The following validators were used for testing code correctness:
+### W3C Markup Validator 
+
+No errors or warnings were found by [W3C Markup Validator](https://validator.w3.org/)  throughout the site.
+<details>
+    <summary>Home</summary>
+    <img src="docs/validation/validation-html-index.jpg">
+</details>
+<details>
+    <summary>Campervans</summary>
+    <img src="docs/validation/validation-html-campervans.jpg">
+</details>
+<details>
+    <summary>Garage</summary>
+    <img src="docs/validation/validation-html-garage.jpg">
+</details>
+<details>
+    <summary>FAQ</summary>
+    <img src="docs/validation/validation-html-faq.jpg">
+</details>
+<details>
+    <summary>Contact</summary>
+    <img src="docs/validation/validation-html-contact.jpg">
+</details>
+<details>
+    <summary>404</summary>
+    <img src="docs/validation/validation-html-404.jpg">
+</details>
+
+### W3C CSS Jigsaw Validator
+
+No errors were found by [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator). Reported warnings are related to Bootstrap and Font Owesome solutions.
+<details>
+    <summary>CSS Validation</summary>
+    <img src="docs/validation/validation-css.jpg">
+</details>
+<details>
+    <summary>Bootstrap</summary>
+    <img src="docs/validation/validation-css-bootstrap.jpg">
+</details>
+<details>
+    <summary>Font Owesome</summary>
+    <img src="docs/validation/validation-css-fontawesome.jpg">
+</details>
+
+## User Experience UX testing
+
+### Visibility and functionality
+Optimal visibility and functionality on various devices was tested throughout the production process and the finished product was tested using [Responsive Designs](http://ami.responsivedesign.is). Screen from this test is placed in the beginning of this document.
+
+### Accessibility
+Testing for accessibility of the site was carried out with the employment of [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/). No errors were found. Alerts were addressed where needed.
+<details>
+    <summary>Home</summary>
+    <img src="docs/validation/validation-accessibility-index.jpg">
+
+    Web accessibility alerts indicated a repeated links. These are important for optimal user experience in this case.
+</details>
+<details>
+    <summary>Campervans</summary>
+    <img src="docs/validation/validation-accessibility-campervans.jpg">
+
+    Alerts related to Campervans page indicated to repeated alternative texts in carousel. This is due to similar nature of images in the carousel.
+</details>
+<details>
+    <summary>Garage</summary>
+    <img src="docs/validation/validation-accessibility-garage.jpg">
+</details>
+<details>
+    <summary>FAQ</summary>
+    <img src="docs/validation/validation-accessibility-faq.jpg">
+</details>
+<details>
+    <summary>Contact</summary>
+    <img src="docs/validation/validation-accessibility-contact.jpg">
+</details>
+<details>
+    <summary>404</summary>
+    <img src="docs/validation/validation-accessibility-404.jpg">
+</details>
+
+### Performance
+Performance testing was done in [Lighthouse](https://developers.google.com/web/tools/lighthouse), part of the Google Chrome Developer Tools.
+ All performance tests ended with score between 90-100.
+<details>
+    <summary>Home</summary>
+    <img src="docs/validation/validation-performance-index.jpg">
+</details>
+<details>
+    <summary>Campervans</summary>
+    <img src="docs/validation/validation-performance-campervans.jpg">
+</details>
+<details>
+    <summary>Garage</summary>
+    <img src="docs/validation/validation-performance-garage.jpg">
+</details>
+<details>
+    <summary>FAQ</summary>
+    <img src="docs/validation/validation-performance-faq.jpg">
+</details>
+<details>
+    <summary>Contact</summary>
+    <img src="docs/validation/validation-performance-contact.jpg">
+</details>
+<details>
+    <summary>404</summary>
+    <img src="docs/validation/validation-performance-404.jpg">
+</details>
+
+### Browser compatibility
+The website was tested on browsers:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Opera
+
+### Testing user stories
+1.	As a First Time Visitor I want to see what holidays in a campervan look and feel like so that I can decide whether it's appealing to me. 
+
+| Feature                                     | Action                                                               | Expected result                                     | Actual result |
+| ------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------- | ------------- |
+| Carousel with pictures of campervans.       | Navigate to Campervans page, go through images.                      | See campervans with their important features shown. | As expected.  |
+| Description of campervans.                  | Navigate to Campervans page, read descriptions.                      | Get accustomed with campervan features available.   | As expected.  |
+| Accordion with answers to common questions. | Navigate to FAQ page, scroll through questions, read chosen answers. | Get clarification on common questions.              | As expected.  |
+
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-campervans-link.jpg">
+    <img src="docs/user-story-testing/user-story-carousel.jpg">
+    <img src="docs/user-story-testing/user-story-carousel-description.jpg">
+    <img src="docs/user-story-testing/user-story-faq-link.jpg">
+    <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
+</details>
+
+2. As a Visitor I want to contact Campervan Adventures to enquire about vehicle rental. 
+
+| Feature                          | Action                                                                                | Expected result                                | Actual result |
+| -------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------- |
+| Contact details on Contact page. | Navigate to Contact page and choose means of contact.                                 | Means of contact provided.                     | As expected.  |
+| Google Maps directions.          | Navigate to Contact page and click on link to Google Maps or on map provided on page. | Get directions to company’s physical location. | As expected.  |
+
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-contact.jpg">
+    <img src="docs/user-story-testing/user-story-map.jpg">
+</details>
+
+3.	As a Visitor I want to subscribe to email newsletter. 
+
+| Feature          | Action                                                         | Expected result      | Actual result               |
+| ---------------- | -------------------------------------------------------------- | -------------------- | --------------------------- |
+| Newsletter form. | Navigate to Contact page, fill the Newsletter form and submit. | Enrol to newsletter. | As expected (in demo mode). |
+
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-signup.jpg">
+</details>
+
+4.	As a Visitor I want to check what is needed to have a holiday in a campervan. 
+
+| Feature                                      | Action                                                               | Expected result    | Actual result |
+| -------------------------------------------- | -------------------------------------------------------------------- | ------------------ | ------------- |
+| Accordion with answers to related questions. | Navigate to FAQ page, scroll through questions, read chosen answers. | Get clarification. | As expected.  |
+
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
+</details>
+
+5.	As a Visitor I want to see what vehicles are available for rent and check for company's current offer.
+
+| Feature                                                              | Action                                                                                              | Expected result                                    | Actual result |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------- |
+| Carousel with campervans photos and campervan descriptions.          | Navigate to Campervan page, see photographs and read descriptions of campervans available for rent. | Get accustomed with campervans and their features. | As expected.  |
+| List of services available for campervan owners at company’s garage. | Navigate to Garage page, see services available.                                                    | Get accustomed with company’s services.            | As expected.  |
+
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-campervans-link.jpg">
+    <img src="docs/user-story-testing/user-story-carousel.jpg">
+    <img src="docs/user-story-testing/user-story-carousel-description.jpg">
+    <img src="docs/user-story-testing/user-story-garage.jpg">
+</details>
+
+6. As a Visitor I want to rent a vehicle online. User story not realized in initial release as described in the analysis in the [Focus](#focus) section.
+
+7. As the Site Owner I want that prospective clients have multiple ways to engage with the company. 
+
+| Feature                          | Action                                                                                | Expected result                                              | Actual result               |
+| -------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------- |
+| Contact details on Contact page. | Navigate to Contact page and choose means of contact.                                 | Means of contact provided.                                   | As expected.                |
+| Google Maps directions.          | Navigate to Contact page and click on link to Google Maps or on map provided on page. | Get directions to company’s physical location.               | As expected.                |
+| Newsletter form.                 | Navigate to Contact page, fill the Newsletter form and submit.                        | Enrol to newsletter.                                         | As expected (in demo mode). |
+| Footer                           | At the bottom of the page click on chosen social media link.                          | Opens new window or tab with company’s social media profile. | As expected.                |
+
+8.	As the Site Owner I want that in case a non-existent page is being pulled the negative impact on Visitor's experience is minimized. 
+
+| Feature         | Action                                                         | Expected result                                                                           | Actual result |
+| --------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------- |
+| Error 404 page. | When a non-existent page is called the Error 404 page appears. | In case of error the Error 404 page appears with a short message and a link to main page. | As expected.  |
+
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-error.jpg">
+</details>
+
+9.	As the Site Owner I want that the Garage starts to generate additional revenue for the company. 
+
+| Feature    | Action                                          | Expected result                                              | Actual result |
+| ---------- | ----------------------------------------------- | ------------------------------------------------------------ | ------------- |
+| Info-boxes | Navigate to Garage page to read about services. | Information about services provided by the garage presented. | As expected.  |
+
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-faq.jpg">
+</details>
+
+10.	As the Site Owner I want that the site is usable on all kinds of widely utilized devices and screens. 
+
+| Feature                                               | Action                                                                                                                    | Expected result                                                                                     | Actual result |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------- |
+| Application of responsive design throughout the site. | Site checked for responsiveness on wide range of screens, internet browsers and for performance in performance validator. | All features adjust and maintain full functionality on wide range of screens, browsers and devices. | As expected.  |
 
 # Bugs and changes to original desing
 During realisation of the project the following obstacles were met and changes to original design introduced:
@@ -175,18 +443,16 @@ During realisation of the project the following obstacles were met and changes t
 * Second modal on the page, containing feedback, was not working as expected. Decided on replacing modal with additional screen.
 # Credits
 ## Code
-n/a 
+[Bootstrap](https://getbootstrap.com) - email functionality
 ## Media
 
 [Colormind](http://colormind.io) – color palette creation  
 <details>
-    <summary>colour palette creation</summary>
+    <summary>colour palette</summary>
     <img src="docs\color-pallette.jpg">
 </details>
 
 [Font Awesome](https://fontawesome.com/) - sourcing icons
-
-[Bootstrap](https://getbootstrap.com) - email functionality
 
 [Favicon Generator](https://favicon.io/favicon-generator/) - favicon creation
 

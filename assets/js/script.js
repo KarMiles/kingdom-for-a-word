@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
     // PROBLEM - I want pressing Enter key to do the same as pressing the button on active modal or screen. 
-    // I got it working on answer-box but not anywhere else.
+    // // I got it working on answer-box but not anywhere else.
     // $('.modal').on('keydown', function(e) {
     //     if (e.keyCode === 13) {
     //     e.preventDefault();
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //     }
     // });
 
-    // close modal on Enter key press NOT WORKING
+    // // close modal on Enter key press, also not working
     // document.getElementById("modalFeedback").addEventListener("click", function(event){
     //     event.preventDefault();
     //     document.getElementById("answer-box").blur();
