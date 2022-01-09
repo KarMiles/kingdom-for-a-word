@@ -294,6 +294,10 @@ The website was tested on browsers:
 | Choice of game version is clear and easy to make. | Make the choice for the game by clicking the appropriate button                                           | Visitor receives feedback with information concerning the chosen game version. | As expected.  |
 | Show instructions for extra clarity.              | After making the choice for the first time a notification is shown with a brief introduction to the game. | Modal with game instructions add clarity on nature of the game.                | As expected.  |
 
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/testing-user-stories-intro.jpg">
+</details>
 
 First Time or Returning Visitor Goals:
 
