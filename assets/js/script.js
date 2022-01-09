@@ -15,7 +15,7 @@ function setScreen(screen) {
     document.getElementById("modalFeedback").style.display = "none";
     if (screen === "startScreen") {
         document.getElementById("startScreen").style.display = "block";
-        document.getElementById("answer-box").focus();  // NOT WORKING
+        document.getElementById("answer-box").focus();
     } else if (screen === "gameScreen") {
         document.getElementById("gameScreen").style.display = "block";
     } else {
@@ -28,7 +28,6 @@ function setScreen(screen) {
  * Get button elements and add event listeners to them.
  */
 document.addEventListener("DOMContentLoaded", function(){
-    setScreen("startScreen");
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
         button.addEventListener("click", function() {
