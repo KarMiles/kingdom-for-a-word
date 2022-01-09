@@ -256,22 +256,6 @@ Testing for accessibility of the site was carried out with the employment of [WA
 <details>
     <summary>Home</summary>
     <img src="docs/validation/validation-accessibility-index.jpg">
-
-    Web accessibility alerts indicated a repeated links. These are important for optimal user experience in this case.
-</details>
-<details>
-    <summary>Campervans</summary>
-    <img src="docs/validation/validation-accessibility-campervans.jpg">
-
-    Alerts related to Campervans page indicated to repeated alternative texts in carousel. This is due to similar nature of images in the carousel.
-</details>
-<details>
-    <summary>Garage</summary>
-    <img src="docs/validation/validation-accessibility-garage.jpg">
-</details>
-<details>
-    <summary>FAQ</summary>
-    <img src="docs/validation/validation-accessibility-faq.jpg">
 </details>
 <details>
     <summary>Contact</summary>
@@ -288,18 +272,6 @@ Performance testing was done in [Lighthouse](https://developers.google.com/web/t
 <details>
     <summary>Home</summary>
     <img src="docs/validation/validation-performance-index.jpg">
-</details>
-<details>
-    <summary>Campervans</summary>
-    <img src="docs/validation/validation-performance-campervans.jpg">
-</details>
-<details>
-    <summary>Garage</summary>
-    <img src="docs/validation/validation-performance-garage.jpg">
-</details>
-<details>
-    <summary>FAQ</summary>
-    <img src="docs/validation/validation-performance-faq.jpg">
 </details>
 <details>
     <summary>Contact</summary>
