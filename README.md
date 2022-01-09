@@ -314,7 +314,11 @@ First Time or Returning Visitor Goals:
 
 <details>
     <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
+    <img src="docs/user-story-testing/testing-user-stories-feedback.jpg">
+</details>
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/testing-user-stories-feedback-modal.jpg">
 </details>
 
 4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive desing.
@@ -332,7 +336,7 @@ First Time or Returning Visitor Goals:
 
 <details>
     <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
+    <img src="docs/user-story-testing/testing-user-stories-contact.jpg">
 </details>
 
 6.	**End user goal:** As a Visitor I want that the site is usable even in case of unexpected errors. **Owner goal:** As the site owner I want to maintain page responsiveness and good impression on the visitor even in case an error occurs.
@@ -343,10 +347,7 @@ First Time or Returning Visitor Goals:
 
 <details>
     <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-campervans-link.jpg">
-    <img src="docs/user-story-testing/user-story-carousel.jpg">
-    <img src="docs/user-story-testing/user-story-carousel-description.jpg">
-    <img src="docs/user-story-testing/user-story-garage.jpg">
+    <img src="docs/user-story-testing/testing-user-stories-error.jpg">
 </details>
 
 # Bugs and changes to original desing
