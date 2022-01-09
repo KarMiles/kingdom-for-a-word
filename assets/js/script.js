@@ -48,8 +48,9 @@ document.addEventListener("DOMContentLoaded", function(){
                 if (!sessionStorage.getItem("runOnce")) {
                     startModalInstructions();
                     sessionStorage.setItem("runOnce", true);
-                };
+                }
                 startModalInstructions();
+                console.log("should start startModalInstructions function")
                 runGame(gameType);
             }
         });

@@ -69,4 +69,4 @@ window.onclick = function(event) {
     } else if (event.target == modalFbk) {
     modalFbk.style.display = "none";
     }
-}
+};

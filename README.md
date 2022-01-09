@@ -320,6 +320,10 @@ First Time or Returning Visitor Goals:
     <summary> Screenshots </summary>
     <img src="docs/user-story-testing/testing-user-stories-feedback-modal.jpg">
 </details>
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/testing-user-stories-feedback-end.jpg">
+</details>
 
 4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive desing.
  
