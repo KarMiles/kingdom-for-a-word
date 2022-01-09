@@ -244,21 +244,3 @@ function updateAnswerMessage() {
     // number of games in session
     document.getElementById("gamesInSession").innerHTML = allowedGamesInSession;
 }
-
-// ADD EXAMPLES ON EASY MODE
-function examples(exampleLength) {
-        // get random word for the list of examples
-        let vocabulary = Object.keys(words);
-        let num = Math.floor(Math.random() * vocabulary.length);
-
-        let randomWord = getRandomWord();
-        let randomWordsList;
-
-        for (let i = 0; i < exampleLength; i++) {
-            
-        }
-
-        return vocabulary[num];
-}
-
-

@@ -1,4 +1,4 @@
-let words = {
+var words = {
     pilot: [
         'airman', 'captain', 'flyer', 'aviator', 'aeronaut', 'fly', 'control', 'operate', 'fly', 'control', 'operate', 'navigate', 'drive', 'manage', 'direct', 'guide', 'handle', 'conduct', 'steer', 'direct', 'lead', 'manage', 'conduct', 'steer', 'trial', 'test', 'model', 'sample', 'experimental'
     ],
