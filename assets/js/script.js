@@ -44,10 +44,12 @@ document.addEventListener("DOMContentLoaded", function(){
                 document.getElementById("answer-box").focus();
             } else {
                 let gameType = this.getAttribute("id");
+                // show game introduction only once
                 if (!sessionStorage.getItem("runOnce")) {
                     startModalInstructions();
                     sessionStorage.setItem("runOnce", true);
-                }
+                };
+                startModalInstructions();
                 runGame(gameType);
             }
         });
