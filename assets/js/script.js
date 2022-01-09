@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     sessionStorage.setItem("runOnce", true);
                 }
                 startModalInstructions();
+                document.getElementById("modalInstructions").style.display = "block";
                 console.log("should start startModalInstructions function")
                 runGame(gameType);
             }

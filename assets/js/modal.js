@@ -13,7 +13,6 @@ var modalInstr = document.getElementById("modalInstructions");
 function startModalInstructions() {
     // show modal
     modalInstr.style.display = "block";
-    document.getElementById("modalInstructions").style.display = "block";
     document.getElementById("startScreen").style.display = "none";
     // put focus on Close modal button
     document.getElementById("closeModal").focus();  
