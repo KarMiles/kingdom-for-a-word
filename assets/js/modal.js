@@ -15,7 +15,7 @@ function startModalInstructions() {
     modalInstr.style.display = "block";
     document.getElementById("startScreen").style.display = "none";
     // put focus on Close modal button
-    document.getElementById("closeModal").focus();  // NOT WORKING
+    document.getElementById("closeModal").focus();  
     // close modal on Enter key press
     document.getElementById("closeModal").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
@@ -31,13 +31,6 @@ function closeModalInstructions() {
     let modalInstr = document.getElementById("modalInstructions");
     modalInstr.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modalInstr) {
-//     modalInstr.style.display = "none";
-//     }
-// }
 
 // FEEDBACK MODAL
 // Get the modal

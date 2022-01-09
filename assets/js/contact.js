@@ -10,24 +10,25 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault(); // prevents default submit event
         emailjs.init("service_baihr9j");
         emailjs.sendForm('kingdom-for-a-word', 'template_q5mqt83', this)
-            .then(function () {
-                // success sending email
+            .then(function () { // success sending email
             }, function (error) {
                 // error message
                 console.log('FAILED...', error);
             });
-        toggleThankYouMessage();
+        thanksMessage();
     });
 });
 
 // /**
 //  * Removes the contact form and displays a thank you message on the contact page after form submision
 //  */
-// function toggleThankYouMessage() {
-//     let html = `
-//             <p>Thank you for leaving a message.</p>
-//             <div>
-//                 <a href="index.html">Return to game</a>
-//             </div>`;
-//     document.getElementById('container').innerHTML = html;
-// }
+function thanksMessage() {
+    let html = `
+            <p>Thank you for leaving your message!</p>
+            <div class = "containers">
+                <button>
+                    <a href="index.html">Return to game</a>
+                </button>
+            </div>`;
+    document.getElementById('container').innerHTML = html;
+}
