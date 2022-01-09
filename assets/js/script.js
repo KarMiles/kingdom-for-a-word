@@ -180,8 +180,10 @@ function incrementFailCount() {
  * @returns 
  */
 function showPraise() {
+    // set counters
     let oldSuccessCount = parseInt(document.getElementById("success-count").innerText);
     let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
+    // only show praise when successful guesses outnumber failed guesses
     let showPraise = oldSuccessCount > oldFailCount;
     if(showPraise) {
         document.getElementById("praise").innerHTML="You're doing great, keep it up!";
@@ -217,10 +219,12 @@ function showFeedback() {
     if(oldSuccessCount > oldFailCount) {
         document.getElementById("startFeedback").innerHTML = "Bravo!";
         document.getElementById("endFeedback").innerHTML = "Well done!";
+        // positive reinforcement with graphic element
         document.getElementById("symbol-large").innerHTML = '<i class="fas fa-shield-alt"></i>';
     } else {
         document.getElementById("startFeedback").innerHTML = "The thing is...";
         document.getElementById("endFeedback").innerHTML = "Better luck next time!";
+        // negative reinforcement with graphic element
         document.getElementById("symbol-large").innerHTML = '<i class="fas fa-times"></i>';
     }
 }
