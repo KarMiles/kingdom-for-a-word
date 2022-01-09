@@ -329,9 +329,11 @@ First Time or Returning Visitor Goals:
     <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
 </details>
 
-6.	**End user goal:** As a Visitor I want that the site is usable even in case of unexpected errors. **Owner goal:** As the site owner I want 
+6.	**End user goal:** As a Visitor I want that the site is usable even in case of unexpected errors. **Owner goal:** As the site owner I want to maintain page responsiveness and good impression on the visitor even in case an error occurs.
 
-
+| Feature  | Action                                                                                                               | Expected result                                                                                                                                                                      | Actual result |
+| -------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| 404 page | In case an unavailable page is called, the user is presented with 404 error page with the link to the starting page. | User does not need to use browser back button. Page maintains interctiveness despite error, User receives notification about error and a possibility to go back to the welcome page. | As expected.  |
 
 <details>
     <summary> Screenshots </summary>
