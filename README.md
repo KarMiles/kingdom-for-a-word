@@ -287,6 +287,7 @@ The website was tested on browsers:
 
 ### Testing user stories
 1. **End user goal:** As a First Time Visitor I want that the site is easy to use. **Owner goal:** As the site Owner I want to provide a game that is intuitive to use. **Acceptance criteria:** Game is easy to learn and immediately engaging. No lengthy instructions are necessary.
+
 | Feature                                           | Action                                                                                                    | Expected result                                                                | Actual result |
 | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------- |
 | Choice of game versions is immediately available. | Click on the button showing game version.                                                                 | Visitor clearly knows the choice they may make.                                | As expected.  |
