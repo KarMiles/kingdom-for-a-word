@@ -97,7 +97,7 @@ Basing on the above analysis the initial roll-out follows on opportunities 1 thr
 The website is a recreational site providing entertainment with educational elements within English language scope.
 
 **Value**
-Value for the owner is providing light-harted entertainment. 
+Value for the owner is providing light-hearted entertainment. 
 Value for the visitor is engaging in a simple game with an educational element.
 
 # Plane 2 Scope
@@ -150,7 +150,7 @@ Site low-fidelity prototypes (wireframes) were created in three versions for var
 # Plane 5 Surface
 
 ## Design choices
-The intention behind building the sensory design for the site is focusing on a light-harted approach to playing with words. Graphic design draws on historic letters and vintage paper. This design is in line with the name of the game "Kingdom for the Word!" losely based on the words in Shakespeare's play "Richard III". 
+The intention behind building the sensory design for the site is focusing on a light-hearted approach to playing with words. Graphic design draws on historic letters and vintage paper. This design is in line with the name of the game "Kingdom for the Word!" loosely based on the words in Shakespeare's play "Richard III". 
 
 ## Colour
 Colour palette applied in the site is inspired by the looks of vintage paper and hand-written and gothic letters.
@@ -329,7 +329,7 @@ First Time or Returning Visitor Goals:
     <img src="docs/user-story-testing/testing-user-stories-feedback-end.jpg">
 </details>
 
-4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive desing.
+4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive design.
  
 | Feature                               | Action                                                                                                                                                                    | Expected result                                        | Actual result |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------- |
@@ -351,7 +351,7 @@ First Time or Returning Visitor Goals:
 
 | Feature  | Action                                                                                                               | Expected result                                                                                                                                                                      | Actual result |
 | -------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
-| 404 page | In case an unavailable page is called, the user is presented with 404 error page with the link to the starting page. | User does not need to use browser back button. Page maintains interctiveness despite error, User receives notification about error and a possibility to go back to the welcome page. | As expected.  |
+| 404 page | In case an unavailable page is called, the user is presented with 404 error page with the link to the starting page. | User does not need to use browser back button. Page maintains interconnetiveness  despite error, User receives notification about error and a possibility to go back to the welcome page. | As expected.  |
 
 <details>
     <summary> Screenshots </summary>
