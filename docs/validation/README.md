@@ -302,6 +302,10 @@ First Time or Returning Visitor Goals:
 2. **End user goal:** As a Visitor I want entertainment which would benefit me in some way.  **Owner goal:** As the site Owner I want to provide additional value to user through an educational aspect of the game. **Acceptance criteria:** Game draws on widely accepted source of knowledge and lets user draw on that. 
 3. **End user goal:** As a Visitor I want to know my progress in the game at all times. **Owner goal:**  As the site Owner I want to keep user engaged through a feedback mechanism. Build and maintain visitor loyalty through increased engagement. **Acceptance criteria:** Game provides score visible at all times. 
 4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive desing. 
+5. As a Visitor I want to be able to contact the author of the game.
+| Feature                                   | Action                                            | Expected result            | Actual result |
+| ----------------------------------------- | ------------------------------------------------- | -------------------------- | ------------- |
+| Form for sending emails to the site owner | Navigate to Contact page and fill the email form. | Means of contact provided. | As expected.  |
 
 <details>
     <summary> Screenshots </summary>
