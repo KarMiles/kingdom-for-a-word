@@ -318,21 +318,20 @@ First Time or Returning Visitor Goals:
 | Apply responsive design where needed. | Page is correctly visible and the game is playable on various kinds of screens and devices. Ensure responsiveness and instructiveness is maintained on various platforms. | Game is playable on various browsers and screen sizes. | As expected.  |
 
 5. As a Visitor I want to be able to contact the author of the game.
-| Feature                                   | Action                                            | Expected result            | Actual result |
-| ----------------------------------------- | ------------------------------------------------- | -------------------------- | ------------- |
-| Form for sending emails to the site owner | Navigate to Contact page and fill the email form. | Means of contact provided. | As expected.  |
+
+| Feature                                   | Action                                                       | Expected result                                              | Actual result |
+| ----------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- |
+| Form for sending emails to the site owner | Navigate to Contact page and fill the email form.            | Means of contact provided.                                   | As expected.  |
+| Footer                                    | At the bottom of the page click on chosen social media link. | Opens new window or tab with company’s social media profile. | As expected.  |
 
 <details>
     <summary> Screenshots </summary>
     <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
 </details>
 
-6.	As a Visitor I want to see what vehicles are available for rent and check for company's current offer.
+6.	**End user goal:** As a Visitor I want that the site is usable even in case of unexpected errors. **Owner goal:** As the site owner I want 
 
-| Feature                                                              | Action                                                                                              | Expected result                                    | Actual result |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------- |
-| Carousel with campervans photos and campervan descriptions.          | Navigate to Campervan page, see photographs and read descriptions of campervans available for rent. | Get accustomed with campervans and their features. | As expected.  |
-| List of services available for campervan owners at company’s garage. | Navigate to Garage page, see services available.                                                    | Get accustomed with company’s services.            | As expected.  |
+
 
 <details>
     <summary> Screenshots </summary>
