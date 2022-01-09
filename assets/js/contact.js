@@ -33,4 +33,4 @@ function thanksMessage() {
                 </button>
             </div>`;
     document.getElementById('container').innerHTML = html;
-}
+};

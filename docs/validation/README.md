@@ -366,9 +366,16 @@ First Time or Returning Visitor Goals:
 During realisation of the project the following obstacles were met and changes to original design introduced:
 * Reference to a variable currentRandomWord didn't work, despite testing via console.log(currentRandomWord) showing appropriate value. Problem was in dot notation. Changing to traditional bracket notation solved the problem.
 * Second modal on the page, containing feedback, was not working as expected. Decided on replacing modal with additional screen.
+* Email sending mechanism not sending emails. Fixed by getting appropriate user, service and template IDs from EmailJS service.
+* Contact page generating script error messages in console, despite all functionality working as expected. Not resolved at time of writing.
 # Credits
 ## Code
-[Bootstrap](https://getbootstrap.com) - email functionality
+[Bootstrap](https://getbootstrap.com) - email form functionality
+
+[EmailJS](https://www.emailjs.com/) - email functionality
+
+Form for the user to write the email is based on Bootstrap. This is the functionality the visitor uses on the webpage. The email is then relayed through EmailJS service to the email address indicated by the site owner. This is based on site owner's account with EmailJS.
+The mechanism has been tested and the site owner receives messages sent from the game Contact page.  
 ## Media
 
 [Colormind](http://colormind.io) – color palette creation  
@@ -396,3 +403,9 @@ During realisation of the project the following obstacles were met and changes t
 [Collins Dictionary](https://www.collinsdictionary.com/dictionary/english-thesaurus) - sourcing words for the game
 
 Other media are property of the developer.
+
+## Acknowledgements
+I would like to thank everyone who contributed to development of this project, especially:
+- My mentor Mo Shami for his invaluable guidance and advice.
+- Educational Team at [Code Institute](https://codeinstitute.net/) for all educational materials which made this project possible.
+- All visual artists and coders who make products of their work available to others online.
