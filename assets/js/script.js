@@ -13,11 +13,12 @@ function setScreen(screen) {
     document.getElementById("gameScreen").style.display = "none";
     document.getElementById("feedbackScreen").style.display = "none";
     document.getElementById("modalFeedback").style.display = "none";
+    document.getElementById("modalInstructions").style.display = "none";
     if (screen === "startScreen") {
         document.getElementById("startScreen").style.display = "block";
-        document.getElementById("answer-box").focus();
     } else if (screen === "gameScreen") {
         document.getElementById("gameScreen").style.display = "block";
+        document.getElementById("answer-box").focus();
     } else {
         document.getElementById("feedbackScreen").style.display = "block";
     }
@@ -51,13 +52,14 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         });
     }
+});
 
-    // allow user to submit answer with Enter key
-    document.getElementById("answer-box").addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-            checkAnswer();
-        }
-    });
+// allow user to submit answer with Enter key
+document.getElementById("answer-box").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        setScreen("gameScreen");
+        checkAnswer();
+    }
 });
 
 // Define global variable to operate number of games in session
