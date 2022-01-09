@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function thanksMessage() {
     let html = `
             <p>Thank you for leaving your message!</p>
-            <div class = "containers">
+            <div class="containers">
                 <button>
                     <a href="index.html">Return to game</a>
                 </button>
