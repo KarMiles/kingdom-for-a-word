@@ -21,7 +21,7 @@ function startModalInstructions() {
         if (event.key === "Enter") {
             modalInstr.style.display = "none";
         }
-    })
+    });
 }
 
 /**
@@ -55,9 +55,9 @@ function startModalFeedback(guess) {
         document.getElementById("guessResult").innerHTML = '<i class="fas fa-shield-alt symbol"></i><br><br>Your answer is correct!';
     } else if (guess === "fail") {
         let userAnswer = document.getElementById("answer-box").value;
-        document.getElementById("guessResult").innerHTML = `<i class="fas fa-times symbol"></i></i><br><br>Unfortunately word "${userAnswer}" is not in the thesaurus.`
+        document.getElementById("guessResult").innerHTML = `<i class="fas fa-times symbol"></i></i><br><br>Unfortunately word "${userAnswer}" is not in the thesaurus.`;
     } else { 
-        document.getElementById("guessResult").innerHTML = '<i class="fas fa-exclamation symbol"></i><br><br>Please enter valid answer!'
+        document.getElementById("guessResult").innerHTML = '<i class="fas fa-exclamation symbol"></i><br><br>Please enter valid answer!';
     }
 
     // close modal on Enter key press
@@ -65,14 +65,7 @@ function startModalFeedback(guess) {
         if (event.key === "Enter") {
             modalFbk.style.display = "none";
         }
-    })
-}
-
-/**
- * Close modal with feedback
- *  */ 
-function closeModalFeedback() {
-    document.getElementById("modalFeedback").style.display = "none";
+    });
 }
 
 // ALL MODALS

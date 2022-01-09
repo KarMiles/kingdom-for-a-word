@@ -30,7 +30,7 @@ function setScreen(screen) {
 document.addEventListener("DOMContentLoaded", function(){
     setScreen("startScreen");
     let buttons = document.getElementsByTagName("button");
-    for (let button of buttons) {   //newer version of: for (let i = 0; i < buttons.length; i++)
+    for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function(){
             } else if (this.getAttribute("id") === "closeFeedback") {
                 setScreen("startScreen");
             }else if (this.getAttribute("id") === "closeModalFbk") {
-                console.log("closeModalFbk button clicked")
                 setScreen("gameScreen");
                 document.getElementById("answer-box").focus();
             } else {
@@ -49,10 +48,9 @@ document.addEventListener("DOMContentLoaded", function(){
                     startModalInstructions();
                     sessionStorage.setItem("runOnce", true);
                 }
-                console.log(`gameType is: ${gameType}.`);
                 runGame(gameType);
             }
-        })
+        });
     }
 
     // allow user to submit answer with Enter key
@@ -60,42 +58,8 @@ document.addEventListener("DOMContentLoaded", function(){
         if (event.key === "Enter") {
             checkAnswer();
         }
-    })
-
-    // PROBLEM - I want pressing Enter key to do the same as pressing the button on active modal or screen. 
-    // // I got it working on answer-box but not anywhere else.
-    // $('.modal').on('keydown', function(e) {
-    //     if (e.keyCode === 13) {
-    //     e.preventDefault();
-    //     e.stopImmediatePropagation();
-    //     checkAnswer();
-    //     console.log("Enter key pressed!");
-    //     }
-    // });
-
-    // // close modal on Enter key press, also not working
-    // document.getElementById("modalFeedback").addEventListener("click", function(event){
-    //     event.preventDefault();
-    //     document.getElementById("answer-box").blur();
-    //     document.getElementsByTagname("closeModalFbk").focus();
-    //     document.getElementsByTagname("closeModalFbk").click();
-    // });
-
-    // document.getElementsByTagName("modal").addEventListener("click", function(event){
-    //     event.preventDefault();
-    //     document.getElementById("answer-box").blur();
-    //     document.getElementsByTagname("closeModalFbk").focus();
-    //     document.getElementsByTagname("closeModalFbk").click();
-    // });
-
-    // window.onclick("click", function(event){
-    //     event.preventDefault();
-    //     document.getElementById("answer-box").blur();
-    //     document.getElementsByTagname("closeModalFbk").focus();
-    //     document.getElementsByTagname("closeModalFbk").click();
-    // });
-
-})
+    });
+});
 
 // Define global variable to operate number of games in session
 var allowedGamesInSession; 
@@ -130,6 +94,7 @@ function runGame(gameType) {
             break;
     }
 
+    // update message above entry box indicating which entry user is about to key in
     updateAnswerMessage();
 }
 
@@ -162,7 +127,7 @@ function checkAnswer() {
     let allowedAnswers = words[currentRandomWord];
     
     // check if user's answer is on the list of allowed answers
-    isCorrect = allowedAnswers.includes(userAnswer);
+    let isCorrect = allowedAnswers.includes(userAnswer);
 
     // update scores
     if(isCorrect) {
@@ -219,9 +184,9 @@ function showPraise() {
     let oldFailCount = parseInt(document.getElementById("fail-count").innerText);
     let showPraise = oldSuccessCount > oldFailCount;
     if(showPraise) {
-        document.getElementById("praise").innerHTML="You're doing great, keep it up!"
+        document.getElementById("praise").innerHTML="You're doing great, keep it up!";
     } else {
-        document.getElementById("praise").innerHTML=""
+        document.getElementById("praise").innerHTML="";
     }
 }
 
@@ -274,8 +239,6 @@ function updateAnswerMessage() {
     document.getElementById("gameNumber").innerHTML = counter + 1;
     // number of games in session
     document.getElementById("gamesInSession").innerHTML = allowedGamesInSession;
-
-    console.log(`Current total points counter is: ${counter + 1} out of ${allowedGamesInSession} allowed.`);
 }
 
 // PREVENT REPEATING WORDS

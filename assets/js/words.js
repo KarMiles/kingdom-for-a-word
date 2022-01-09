@@ -27,7 +27,7 @@ let words = {
     revive: [
         'revitalize', 'restore', 'rally', 'renew', 'renovate', 'rekindle', 'kick-start', 'breathe', 'new', 'life', 'into', 'invigorate', 'reanimate', 'bring', 'round', 'awaken', 'animate', 'rouse', 'resuscitate', 'bring back to life', 'bring round', 'awaken', 'animate', 'rouse', 'resuscitate', 'come round', 'recover', 'quicken', 'spring', 'up again', 'refresh', 'restore', 'comfort', 'cheer', 'renew', 'resurrect', 'rejuvenate', 'reinvigorate', 'revivify'
     ]
-}
+};
 
 
 

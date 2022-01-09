@@ -219,20 +219,8 @@ The following validators were used for testing code correctness:
 
 No errors or warnings were found by [W3C Markup Validator](https://validator.w3.org/)  throughout the site.
 <details>
-    <summary>Home</summary>
+    <summary>Starting page</summary>
     <img src="docs/validation/validation-html-index.jpg">
-</details>
-<details>
-    <summary>Campervans</summary>
-    <img src="docs/validation/validation-html-campervans.jpg">
-</details>
-<details>
-    <summary>Garage</summary>
-    <img src="docs/validation/validation-html-garage.jpg">
-</details>
-<details>
-    <summary>FAQ</summary>
-    <img src="docs/validation/validation-html-faq.jpg">
 </details>
 <details>
     <summary>Contact</summary>
@@ -244,19 +232,17 @@ No errors or warnings were found by [W3C Markup Validator](https://validator.w3.
 </details>
 
 ### W3C CSS Jigsaw Validator
-
-No errors were found by [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator). Reported warnings are related to Bootstrap and Font Owesome solutions.
+No errors were found by [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator).
 <details>
     <summary>CSS Validation</summary>
     <img src="docs/validation/validation-css.jpg">
 </details>
+
+### JS Hint Validator
+No errors. Warnings are mainly related to browsers versions compatibility and are considered acceptable.
 <details>
-    <summary>Bootstrap</summary>
-    <img src="docs/validation/validation-css-bootstrap.jpg">
-</details>
-<details>
-    <summary>Font Owesome</summary>
-    <img src="docs/validation/validation-css-fontawesome.jpg">
+    <summary>JavaScript Validation</summary>
+    <img src="docs/validation/validation-javascript.jpg">
 </details>
 
 ## User Experience UX testing
