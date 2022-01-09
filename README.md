@@ -312,6 +312,11 @@ First Time or Returning Visitor Goals:
 | Feedback modal showing after visitor enters their guess.                                                              | Modal with feedback notifying whether the last guess was successful is shown after visitor enters their guess.                                                                                                                                                                    | Visitor gets notification on game progress and knows how they are progressing.                                 | As expected.  |
 | End of game feedback.                                                                                                 | After entering set number of words, depending on game version, a screen with  notification on game result is presented. Visitor receives validation also on the last stage, with confirmation of number of wins, number of games in the session and overall result (win or lose). | Visitor has clear information on outcome of the game.                                                          | As expected.  |
 
+<details>
+    <summary> Screenshots </summary>
+    <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
+</details>
+
 4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive desing.
  
 | Feature                               | Action                                                                                                                                                                    | Expected result                                        | Actual result |
