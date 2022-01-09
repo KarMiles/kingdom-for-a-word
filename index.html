@@ -59,7 +59,9 @@
     <div id="gameScreen">
         <div class="containers">
             <p id="word-pop">Word</p>
-            <p id="answer-message">Your guess <span id="gameNumber"></span> out of <span id="gamesInSession"></span>:</p>
+            <label for="answer-box">
+                <p id="answer-message">Your guess <span id="gameNumber"></span> out of <span id="gamesInSession"></span>:</p>
+            </label>
             <input id="answer-box" type="text">
             <button data-type="submit">Submit Answer</button>
             <p class = "score"><i class="far fa-thumbs-up"></i> Successfull guesses: <span id=success-count>0</span></p>
