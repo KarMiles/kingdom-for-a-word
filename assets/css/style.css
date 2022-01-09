@@ -41,7 +41,7 @@ header > p {
 
 /* visibility */
 #startScreen {
-    display: initial;
+    display: block;
 }
 
 #gameScreen {
