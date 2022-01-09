@@ -55,8 +55,13 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 // allow user to submit answer with Enter key
+// $('.answer-box').on('keydown', 'input', function(event) {
 document.getElementById("answer-box").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
         setScreen("gameScreen");
         checkAnswer();
     }
