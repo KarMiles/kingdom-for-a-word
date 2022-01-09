@@ -8,9 +8,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault(); // prevents default submit event
-        emailjs.init("service_baihr9j");
-        emailjs.sendForm('kingdom-for-a-word', 'template_q5mqt83', this)
-            .then(function () { // success sending email
+        emailjs.init("user_jdwshNZJAnZn9yEhdoOx3");
+        emailjs.sendForm('service_baihr9j', 'template_o388yfj', this)
+            .then(function () {
+                // success sending email
+                console.log('Message sent successfully.');
             }, function (error) {
                 // error message
                 console.log('FAILED...', error);
