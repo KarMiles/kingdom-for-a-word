@@ -62,8 +62,13 @@ a {
     font-weight: 600;
 }
 
-#logo {
+.logo {
     height: 2.5rem;
+}
+
+.logo-small {
+    height: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 /* text */
