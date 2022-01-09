@@ -49,9 +49,6 @@ Developer: Karol Mileszko
     2. [Media](#media)
     3. [Acknowledgements](#acknowledgements)
 
-## Table of content
-...
-
 ## Introduction
 **The idea for the project**
 
