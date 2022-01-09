@@ -36,7 +36,7 @@ Developer: Karol Mileszko
     1. [Validators](#validators)
         1. [W3C Markup Validator](#w3c-markup-validator)
         2. [W3C CSS JigSaw Validator](#w3c-css-jigsaw-validator)
-        3. [JS Hint Validator](###-js-hint-validator)
+        3. [JS Hint Validator](#-js-hint-validator)
     2. [User Experience UX testing](#user-experience-ux-testing)
         1. [Visibility and functionality](#visibility-and-functionality)
         2. [Accessibility](#accessibility)
