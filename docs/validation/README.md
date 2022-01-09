@@ -289,9 +289,13 @@ The website was tested on browsers:
 - Opera
 
 ### Testing user stories
-1. **End user goal:** As a First Time Visitor I want that the site is easy to use.
-- Feature: Choice of game versions is immediatelly available.
-- Feature: A short introduction and instruction is shown after visitor choses the game version for the first time. 
+1. **End user goal:** As a First Time Visitor I want that the site is easy to use. **Owner goal:** As the site Owner I want to provide a game that is intuitive to use. **Acceptance criteria:** Game is easy to learn and immediately engaging. No lengthy instructions are necessary.
+| Feature                                           | Action                                                                                                    | Expected result                                                                | Actual result |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------- |
+| Choice of game versions is immediately available. | Click on the button showing game version.                                                                 | Visitor clearly knows the choice they may make.                                | As expected.  |
+| Choice of game version is clear and easy to make. | Make the choice for the game by clicking the appropriate button                                           | Visitor receives feedback with information concerning the chosen game version. | As expected.  |
+| Show instructions for extra clarity.              | After making the choice for the first time a notification is shown with a brief introduction to the game. | Modal with game instructions add clarity on nature of the game.                | As expected.  |
+
 
 First Time or Returning Visitor Goals:
 
