@@ -245,14 +245,20 @@ function updateAnswerMessage() {
     document.getElementById("gamesInSession").innerHTML = allowedGamesInSession;
 }
 
-// PREVENT REPEATING WORDS
-// Create variable to store list of words which were already selected
-// var used = "";
+// ADD EXAMPLES ON EASY MODE
+function examples(exampleLength) {
+        // get random word for the list of examples
+        let vocabulary = Object.keys(words);
+        let num = Math.floor(Math.random() * vocabulary.length);
 
-function examples() {
-        // get random word for the game
-        let currentRandomWord = getRandomWord();
-        document.getElementById("word-pop").innerHTML = currentRandomWord;
+        let randomWord = getRandomWord();
+        let randomWordsList;
+
+        for (let i = 0; i < exampleLength; i++) {
+            
+        }
+
+        return vocabulary[num];
 }
 
 
