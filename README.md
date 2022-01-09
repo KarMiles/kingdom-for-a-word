@@ -43,7 +43,6 @@ Developer: Karol Mileszko
         3. [Performance](#performance)
         4. [Browser compatibility](#browser-compatibility)
         5. [Testing user stories](#testing-user-stories)
-        6. [Peer review](#peer-review)
 11. [Bugs and changes to original design](#bugs-and-changes-to-original-design)
 12. [Credits](#credits)
     1. [Code](#code)
@@ -290,52 +289,15 @@ The website was tested on browsers:
 - Opera
 
 ### Testing user stories
-1.	As a First Time Visitor I want to see what holidays in a campervan look and feel like so that I can decide whether it's appealing to me. 
+1. **End user goal:** As a First Time Visitor I want that the site is easy to use.
+- Feature: Choice of game versions is immediatelly available.
+- Feature: A short introduction and instruction is shown after visitor choses the game version for the first time. 
 
-| Feature                                     | Action                                                               | Expected result                                     | Actual result |
-| ------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------- | ------------- |
-| Carousel with pictures of campervans.       | Navigate to Campervans page, go through images.                      | See campervans with their important features shown. | As expected.  |
-| Description of campervans.                  | Navigate to Campervans page, read descriptions.                      | Get accustomed with campervan features available.   | As expected.  |
-| Accordion with answers to common questions. | Navigate to FAQ page, scroll through questions, read chosen answers. | Get clarification on common questions.              | As expected.  |
+First Time or Returning Visitor Goals:
 
-<details>
-    <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-campervans-link.jpg">
-    <img src="docs/user-story-testing/user-story-carousel.jpg">
-    <img src="docs/user-story-testing/user-story-carousel-description.jpg">
-    <img src="docs/user-story-testing/user-story-faq-link.jpg">
-    <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
-</details>
-
-2. As a Visitor I want to contact Campervan Adventures to enquire about vehicle rental. 
-
-| Feature                          | Action                                                                                | Expected result                                | Actual result |
-| -------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------- |
-| Contact details on Contact page. | Navigate to Contact page and choose means of contact.                                 | Means of contact provided.                     | As expected.  |
-| Google Maps directions.          | Navigate to Contact page and click on link to Google Maps or on map provided on page. | Get directions to company’s physical location. | As expected.  |
-
-<details>
-    <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-contact.jpg">
-    <img src="docs/user-story-testing/user-story-map.jpg">
-</details>
-
-3.	As a Visitor I want to subscribe to email newsletter. 
-
-| Feature          | Action                                                         | Expected result      | Actual result               |
-| ---------------- | -------------------------------------------------------------- | -------------------- | --------------------------- |
-| Newsletter form. | Navigate to Contact page, fill the Newsletter form and submit. | Enrol to newsletter. | As expected (in demo mode). |
-
-<details>
-    <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-signup.jpg">
-</details>
-
-4.	As a Visitor I want to check what is needed to have a holiday in a campervan. 
-
-| Feature                                      | Action                                                               | Expected result    | Actual result |
-| -------------------------------------------- | -------------------------------------------------------------------- | ------------------ | ------------- |
-| Accordion with answers to related questions. | Navigate to FAQ page, scroll through questions, read chosen answers. | Get clarification. | As expected.  |
+2. **End user goal:** As a Visitor I want entertainment which would benefit me in some way.  **Owner goal:** As the site Owner I want to provide additional value to user through an educational aspect of the game. **Acceptance criteria:** Game draws on widely accepted source of knowledge and lets user draw on that. 
+3. **End user goal:** As a Visitor I want to know my progress in the game at all times. **Owner goal:**  As the site Owner I want to keep user engaged through a feedback mechanism. Build and maintain visitor loyalty through increased engagement. **Acceptance criteria:** Game provides score visible at all times. 
+4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive desing. 
 
 <details>
     <summary> Screenshots </summary>
