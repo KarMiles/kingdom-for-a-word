@@ -323,45 +323,6 @@ First Time or Returning Visitor Goals:
     <img src="docs/user-story-testing/user-story-garage.jpg">
 </details>
 
-6. As a Visitor I want to rent a vehicle online. User story not realized in initial release as described in the analysis in the [Focus](#focus) section.
-
-7. As the Site Owner I want that prospective clients have multiple ways to engage with the company. 
-
-| Feature                          | Action                                                                                | Expected result                                              | Actual result               |
-| -------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------- |
-| Contact details on Contact page. | Navigate to Contact page and choose means of contact.                                 | Means of contact provided.                                   | As expected.                |
-| Google Maps directions.          | Navigate to Contact page and click on link to Google Maps or on map provided on page. | Get directions to company’s physical location.               | As expected.                |
-| Newsletter form.                 | Navigate to Contact page, fill the Newsletter form and submit.                        | Enrol to newsletter.                                         | As expected (in demo mode). |
-| Footer                           | At the bottom of the page click on chosen social media link.                          | Opens new window or tab with company’s social media profile. | As expected.                |
-
-8.	As the Site Owner I want that in case a non-existent page is being pulled the negative impact on Visitor's experience is minimized. 
-
-| Feature         | Action                                                         | Expected result                                                                           | Actual result |
-| --------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------- |
-| Error 404 page. | When a non-existent page is called the Error 404 page appears. | In case of error the Error 404 page appears with a short message and a link to main page. | As expected.  |
-
-<details>
-    <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-error.jpg">
-</details>
-
-9.	As the Site Owner I want that the Garage starts to generate additional revenue for the company. 
-
-| Feature    | Action                                          | Expected result                                              | Actual result |
-| ---------- | ----------------------------------------------- | ------------------------------------------------------------ | ------------- |
-| Info-boxes | Navigate to Garage page to read about services. | Information about services provided by the garage presented. | As expected.  |
-
-<details>
-    <summary> Screenshots </summary>
-    <img src="docs/user-story-testing/user-story-faq.jpg">
-</details>
-
-10.	As the Site Owner I want that the site is usable on all kinds of widely utilized devices and screens. 
-
-| Feature                                               | Action                                                                                                                    | Expected result                                                                                     | Actual result |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------- |
-| Application of responsive design throughout the site. | Site checked for responsiveness on wide range of screens, internet browsers and for performance in performance validator. | All features adjust and maintain full functionality on wide range of screens, browsers and devices. | As expected.  |
-
 # Bugs and changes to original desing
 During realisation of the project the following obstacles were met and changes to original design introduced:
 * Reference to a variable currentRandomWord didn't work, despite testing via console.log(currentRandomWord) showing appropriate value. Problem was in dot notation. Changing to traditional bracket notation solved the problem.
