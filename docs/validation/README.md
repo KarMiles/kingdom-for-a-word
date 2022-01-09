@@ -313,6 +313,10 @@ First Time or Returning Visitor Goals:
 | End of game feedback.                                                                                                 | After entering set number of words, depending on game version, a screen with  notification on game result is presented. Visitor receives validation also on the last stage, with confirmation of number of wins, number of games in the session and overall result (win or lose). | Visitor has clear information on outcome of the game.                                                          | As expected.  |
 
 4. **End user goal:** As a Visitor I want to be able to access the game on various kinds of devices. **Owner goal:**  As the site Owner I want to maintain customer engagement in various kinds of situations, when stationary (pc screen) or on the move (tablets and smartphones). **Acceptance criteria:** Site utilizes mechanisms of responsive desing. 
+| Feature                               | Action                                                                                                                                                                    | Expected result                                        | Actual result |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------- |
+| Apply responsive design where needed. | Page is correctly visible and the game is playable on various kinds of screens and devices. Ensure responsiveness and instructiveness is maintained on various platforms. | Game is playable on various browsers and screen sizes. | As expected.  |
+
 5. As a Visitor I want to be able to contact the author of the game.
 | Feature                                   | Action                                            | Expected result            | Actual result |
 | ----------------------------------------- | ------------------------------------------------- | -------------------------- | ------------- |
@@ -323,7 +327,7 @@ First Time or Returning Visitor Goals:
     <img src="docs/user-story-testing/user-story-accordeon-link.jpg">
 </details>
 
-5.	As a Visitor I want to see what vehicles are available for rent and check for company's current offer.
+6.	As a Visitor I want to see what vehicles are available for rent and check for company's current offer.
 
 | Feature                                                              | Action                                                                                              | Expected result                                    | Actual result |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------- |
