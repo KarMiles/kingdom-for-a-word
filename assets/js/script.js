@@ -240,32 +240,3 @@ function updateAnswerMessage() {
     // number of games in session
     document.getElementById("gamesInSession").innerHTML = allowedGamesInSession;
 }
-
-// NEW
-
-/**
- * Receive user answer and check against thesaurus
- * @returns {boolean} true if correct answer, false otherwise.
- */
-function checkAnswerX() {
-    // get random word 
-    let currentRandomWord = document.getElementById("word-pop").textContent;
-
-    // get user's answer
-    let userAnswer = document.getElementById("answer-box").value.toLowerCase();
-
-    // check if user entered answer, true if answer missing
-    let noAnswer = userAnswer === ("");
-
-    // get a list of allowed answers
-    let allowedAnswers = words[currentRandomWord];
-    
-    // check if user's answer is on the list of allowed answers
-    let isCorrect = allowedAnswers.includes(userAnswer);
-
-    // update scores
-    if(!isCorrect) {
-        console.log("not correct");
-    } 
-};
-checkAnswerX();
