@@ -149,7 +149,6 @@ function checkAnswer() {
     currentRandomWord = getRandomWord();
     document.getElementById("word-pop").innerHTML = currentRandomWord;
 
-
     // clear and focus cursor on answer box 
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
@@ -244,26 +243,3 @@ function updateAnswerMessage() {
     // number of games in session
     document.getElementById("gamesInSession").innerHTML = allowedGamesInSession;
 }
-
-// ADD EXAMPLES OF CORRECT ANSWERS ON EASY MODE
-function examples() {
-
-    // let vocabulary = Object.keys(words);
-
-    // get the current random word
-    let currentRandomWord = document.getElementById("word-pop").textContent;
-
-    // get the list of allowed answers
-    let allowedAnswers = Object.keys(words.currentRandomWord);
-    // words[currentRandomWord];
-
-    let num = Math.floor(Math.random() * allowedAnswers.length);
-
-    for (let i = 0; i < num; i++) {
-        randomWordsList.push.allowedAnswers[num];
-    }
-
-    return randomWordsList;
-}
-examples();
-console.log(`examples()`);
