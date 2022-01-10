@@ -12,7 +12,6 @@ function setScreen(screen) {
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("gameScreen").style.display = "none";
     document.getElementById("feedbackScreen").style.display = "none";
-    document.getElementById("modalFeedback").style.display = "none";
     if (screen === "startScreen") {
         document.getElementById("startScreen").style.display = "block";
     } else if (screen === "gameScreen") {
