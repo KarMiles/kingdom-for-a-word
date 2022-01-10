@@ -264,28 +264,8 @@ function checkAnswerX() {
     let isCorrect = allowedAnswers.includes(userAnswer);
 
     // update scores
-    if(isCorrect) {
-        incrementSuccessCount();
-        // alert("Congratulations! Your answer is correct!");  // version with alert
-        startModalFeedback("success");
-        showFeedback();
-    } else if(noAnswer) {
-        startModalFeedback();
-    } else {
-        incrementFailCount();
-        startModalFeedback("fail");
-        showFeedback();
-    }
-
-    // get random word for the game
-    currentRandomWord = getRandomWord();
-    document.getElementById("word-pop").innerHTML = currentRandomWord;
-
-    // clear and focus cursor on answer box 
-    document.getElementById("answer-box").value = "";
-    document.getElementById("answer-box").focus();
-
-    updateAnswerMessage();
-
-    showPraise();
-}
+    if(!isCorrect) {
+        console.log("not correct");
+    } 
+};
+checkAnswerX();
